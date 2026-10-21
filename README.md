@@ -34,7 +34,8 @@ iot-ml-book/
 │   └── Onno W. Purbo, IoT Terintegrasi dengan Machine Learning Data Analytics, 2026.pdf
 ├── notebooks/             # Jupyter Notebook eksperimen
 │   ├── 00_uji_lingkungan.ipynb
-│   └── 01_baca_data_sensor.ipynb
+│   ├── 01_baca_data_sensor.ipynb
+│   └── 02_kirim_data_mqtt.ipynb
 ├── outputs/
 │   ├── figures/           # Hasil visualisasi grafik (PNG)
 │   │   ├── plot_suhu_ruangan.png
@@ -42,8 +43,14 @@ iot-ml-book/
 │   │   ├── humidity.png
 │   │   ├── co2.png
 │   │   └── temperature_vs_co2.png
+│   ├── logs/              # Log transmisi pesan telemetri
+│   │   ├── publisher_room01.log
+│   │   └── publisher_greenhouse.log
 │   └── reports/           # Laporan dan metrik model
 ├── scripts/               # Skrip Python executable
+│   ├── mqtt/
+│   │   ├── publish_sensor.py
+│   │   └── publish_greenhouse.py
 │   ├── uji_lingkungan.py
 │   ├── baseline_evaluation.py
 │   ├── read_dummy_csv.py
@@ -74,5 +81,21 @@ iot-ml-book/
   ```bash
   python scripts/plot_dummy_sensor.py
   ```
-- **Notebook Interaktif:** `notebooks/01_baca_data_sensor.ipynb` (eksplorasi grafik time series dan scatter plot relasi suhu vs CO2).
-- **Hasil Olahan:** Data bertipe datetime disimpan ke `data/processed/room_sensor_clean.csv`.
+- **Notebook Interaktif:** `notebooks/01_baca_data_sensor.ipynb`.
+- **Hasil Olahan:** Disimpan ke `data/processed/room_sensor_clean.csv`.
+
+### Hands-on 3: Mengirim Data Sensor ke MQTT
+- **Broker:** Eclipse Mosquitto (port 1883).
+- **Topik MQTT:**
+  - Ruang: `kampus/lab1/room01/telemetry`
+  - Greenhouse: `kampus/greenhouse/zone1/telemetry`
+- **Jalankan Publisher Sensor Ruang:**
+  ```bash
+  python scripts/mqtt/publish_sensor.py --count 5
+  ```
+- **Jalankan Publisher Sensor Greenhouse (Pertanian Presisi):**
+  ```bash
+  python scripts/mqtt/publish_greenhouse.py --count 3
+  ```
+- **Notebook Interaktif:** `notebooks/02_kirim_data_mqtt.ipynb`.
+- **Log Pengiriman:** Tersimpan di `outputs/logs/publisher_room01.log` dan `outputs/logs/publisher_greenhouse.log`.
