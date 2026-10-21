@@ -23,6 +23,9 @@ outputs/figures/*
 outputs/reports/*
 !outputs/reports/*.md
 !outputs/reports/.gitkeep
+outputs/logs/*
+!outputs/logs/.gitkeep
+!outputs/logs/*.log
 tmp/*
 !tmp/.gitkeep
 
