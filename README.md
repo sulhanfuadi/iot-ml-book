@@ -1,7 +1,21 @@
 # iot-ml-book
 
 Repositori praktikum Sistem Tertanam - Departemen Informatika Universitas Diponegoro (2026).
-Referensi: *IoT Terintegrasi dengan Machine Learning & Data Analytics* oleh Onno W. Purbo.
+
+---
+
+## Buku & Dokumen Referensi Utama
+
+Seluruh implementasi hands-on, arsitektur kode, skrip simulator, serta model analitik dan machine learning di repositori ini mengacu langsung pada dokumen rujukan yang tersimpan di dalam folder `docs/`:
+
+1. **Buku Utama:**
+   - Path: `docs/Onno W. Purbo, IoT Terintegrasi dengan Machine Learning Data Analytics, 2026.pdf`
+   - Penulis: Onno W. Purbo (ITTS / OnnoCenter, 2026)
+   - Deskripsi: Sumber acuan utama (536 halaman) yang mencakup Hands-on 1 hingga Hands-on 40 (Fondasi Praktis IoT Analytics, Data Analytics Python, Machine Learning IoT, Integrasi End-to-End Open Source, dan Studi Kasus Praktis).
+2. **Slide Praktikum:**
+   - Path: `docs/08. Sister IF 2026 - Persiapan Lingkungan Kerja.pdf`
+   - Pemateri: Indra Waspada (Universitas Diponegoro, 2026)
+   - Deskripsi: Slide panduan silabus dan persiapan lingkungan kerja praktikum.
 
 ---
 
@@ -9,17 +23,22 @@ Referensi: *IoT Terintegrasi dengan Machine Learning & Data Analytics* oleh Onno
 
 ```text
 iot-ml-book/
-├── .venv/
+├── .venv/                 # Virtual environment Python
 ├── data/
-│   ├── raw/
-│   └── processed/
-├── notebooks/
+│   ├── raw/               # Dataset sensor mentah
+│   └── processed/         # Dataset hasil olahan/pembersihan
+├── docs/                  # Buku referensi utama dan slide kuliah
+│   ├── 08. Sister IF 2026 - Persiapan Lingkungan Kerja.pdf
+│   └── Onno W. Purbo, IoT Terintegrasi dengan Machine Learning Data Analytics, 2026.pdf
+├── notebooks/             # Jupyter Notebook eksperimen
 │   └── 00_uji_lingkungan.ipynb
-├── scripts/
-│   └── uji_lingkungan.py
 ├── outputs/
-│   ├── figures/
-│   └── reports/
+│   ├── figures/           # Hasil visualisasi grafik
+│   └── reports/           # Laporan dan metrik model
+├── scripts/               # Skrip Python executable
+│   ├── uji_lingkungan.py
+│   └── baseline_evaluation.py
+├── requirements.lock.txt
 ├── requirements.txt
 └── README.md
 ```
@@ -44,4 +63,4 @@ Notebook aktif dan siap dipakai.
 ```
 
 ### 3. Menjalankan Jupyter Notebook
-Buka Visual Studio Code pada folder `iot-ml-book`, buka file `notebooks/00_uji_lingkungan.ipynb`, lalu pilih kernel **Python (.venv iot-ml-book)**.
+Buka Visual Studio Code pada direktori `iot-ml-book`, buka file `notebooks/00_uji_lingkungan.ipynb`, lalu pilih kernel **Python (.venv iot-ml-book)**.
