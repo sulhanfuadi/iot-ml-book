@@ -1,4 +1,4 @@
-# IoT ML Data Analytics
+# iot-ml-book
 
 Repositori praktikum Sistem Tertanam - Departemen Informatika Universitas Diponegoro (2026).
 Referensi: *IoT Terintegrasi dengan Machine Learning & Data Analytics* oleh Onno W. Purbo.
@@ -8,24 +8,20 @@ Referensi: *IoT Terintegrasi dengan Machine Learning & Data Analytics* oleh Onno
 ## Struktur Direktori
 
 ```text
-IoT_ML_DataAnalytics/
-├── .venv/                 # Virtual environment Python
+iot-ml-book/
+├── .venv/
 ├── data/
-│   ├── raw/               # Dataset mentah dari sensor / simulator
-│   └── processed/         # Dataset hasil preprocessing
-├── docs/                  # Dokumentasi praktikum
-├── notebooks/             # Jupyter Notebook eksplorasi dan analisis
+│   ├── raw/
+│   └── processed/
+├── notebooks/
 │   └── 00_uji_lingkungan.ipynb
-├── outputs/
-│   ├── figures/           # Plot visualisasi (PNG, SVG, PDF)
-│   └── reports/           # Laporan hasil analitik
-├── scripts/               # Skrip Python executable
+├── scripts/
 │   └── uji_lingkungan.py
-├── tmp/                   # File sementara
-├── .gitignore
-├── README.md
-├── requirements.lock.txt
-└── requirements.txt
+├── outputs/
+│   ├── figures/
+│   └── reports/
+├── requirements.txt
+└── README.md
 ```
 
 ---
@@ -48,4 +44,4 @@ Notebook aktif dan siap dipakai.
 ```
 
 ### 3. Menjalankan Jupyter Notebook
-Buka Visual Studio Code, buka file `notebooks/00_uji_lingkungan.ipynb`, lalu pilih kernel **Python (.venv IoT_ML_DataAnalytics)** di pojok kanan atas editor.
+Buka Visual Studio Code pada folder `iot-ml-book`, buka file `notebooks/00_uji_lingkungan.ipynb`, lalu pilih kernel **Python (.venv iot-ml-book)**.
