@@ -11,12 +11,17 @@ __pycache__/
 
 # Data and artifacts
 data/raw/*
+!data/raw/*.csv
 !data/raw/.gitkeep
 data/processed/*
+!data/processed/*.csv
 !data/processed/.gitkeep
 outputs/figures/*
+!outputs/figures/*.png
+!outputs/figures/*.svg
 !outputs/figures/.gitkeep
 outputs/reports/*
+!outputs/reports/*.md
 !outputs/reports/.gitkeep
 tmp/*
 !tmp/.gitkeep
