@@ -1,0 +1,2 @@
+2026-10-21T22:03:34.725969 - [GREENHOUSE] {"device_id": "greenhouse-zone1", "air_temp_c": 29.25, "soil_moisture_pct": 59.9, "light_lux": 23366, "timestamp": "2026-10-21T22:03:34"}
+2026-10-21T22:03:35.732311 - [GREENHOUSE] {"device_id": "greenhouse-zone1", "air_temp_c": 27.51, "soil_moisture_pct": 58.87, "light_lux": 28954, "timestamp": "2026-10-21T22:03:35"}

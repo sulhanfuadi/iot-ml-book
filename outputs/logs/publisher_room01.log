@@ -1,0 +1,3 @@
+2026-10-21T22:03:11.069422 - Berhasil publish ke kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 28.86, "humidity_pct": 58.29, "co2_ppm": 450, "power_watt": 122.81, "timestamp": "2026-10-21T22:03:11"}
+2026-10-21T22:03:12.075571 - Berhasil publish ke kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 27.98, "humidity_pct": 63.09, "co2_ppm": 664, "power_watt": 149.45, "timestamp": "2026-10-21T22:03:12"}
+2026-10-21T22:03:13.084615 - Berhasil publish ke kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 27.61, "humidity_pct": 58.87, "co2_ppm": 522, "power_watt": 133.37, "timestamp": "2026-10-21T22:03:13"}
