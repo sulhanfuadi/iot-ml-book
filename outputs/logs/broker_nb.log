@@ -1,41 +1,31 @@
 [INFO] Broker MQTT Mosquitto aktif di 127.0.0.1:1883
 [INFO] Tekan Ctrl+C untuk menghentikan broker.
-1792653822: Info: running mosquitto as user: sulhanhadi.
-1792653822: mosquitto version 2.1.2 starting
-1792653822: Config loaded from /var/folders/05/lm51jlmx267gpqt0s_p34x8h0000gn/T/iot_ml_book_mosquitto.conf.
-1792653822: Bridge support available.
-1792653822: Persistence support available.
-1792653822: TLS support available.
-1792653822: TLS-PSK support available.
-1792653822: Websockets support available.
-1792653822: Opening ipv4 listen socket on port 1883.
-1792653822: mosquitto version 2.1.2 running
-1792653825: New connection from 127.0.0.1:61984 on port 1883.
-1792653825: New client connected from 127.0.0.1:61984 as publisher-room01 (p4, c1, k60).
-1792653826: New connection from 127.0.0.1:61987 on port 1883.
-1792653826: New client connected from 127.0.0.1:61987 as subscriber-room01 (p4, c1, k60).
-1792653840: Client subscriber-room01 [127.0.0.1:61987] disconnected: connection closed by client.
-1792653840: Client subscriber-room01 [127.0.0.1:61987] disconnected: connection closed by client.
-1792653840: New connection from 127.0.0.1:61993 on port 1883.
-1792653840: New client connected from 127.0.0.1:61993 as subscriber-all-lab1 (p4, c1, k60).
-1792653844: New connection from 127.0.0.1:62002 on port 1883.
-1792653844: New client connected from 127.0.0.1:62002 as uji-room02 (p4, c1, k60).
-1792653844: Client uji-room02 [127.0.0.1:62002] disconnected.
-1792653844: New connection from 127.0.0.1:62003 on port 1883.
-1792653844: New client connected from 127.0.0.1:62003 as uji-room03 (p4, c1, k60).
-1792653844: Client uji-room03 [127.0.0.1:62003] disconnected.
-1792653854: Client subscriber-all-lab1 [127.0.0.1:61993] disconnected: connection closed by client.
-1792653854: Client subscriber-all-lab1 [127.0.0.1:61993] disconnected: connection closed by client.
-1792653854: New connection from 127.0.0.1:62008 on port 1883.
-1792653854: New client connected from 127.0.0.1:62008 as subscriber-validated (p4, c1, k60).
-1792653856: New connection from 127.0.0.1:62011 on port 1883.
-1792653856: New client connected from 127.0.0.1:62011 as publisher-anomali (p4, c1, k60).
-1792653856: Client publisher-anomali [127.0.0.1:62011] disconnected.
-1792653856: New connection from 127.0.0.1:62012 on port 1883.
-1792653856: New client connected from 127.0.0.1:62012 as publisher-anomali (p4, c1, k60).
-1792653856: Client publisher-anomali [127.0.0.1:62012] disconnected.
-1792653856: Client publisher-anomali [127.0.0.1:62012] disconnected: connection closed by client.
-1792653865: Client subscriber-validated [127.0.0.1:62008] disconnected.
-1792653865: Client publisher-room01 [127.0.0.1:61984] disconnected: connection closed by client.
-1792653865: Client publisher-room01 [127.0.0.1:61984] disconnected: connection closed by client.
-1792653865: mosquitto version 2.1.2 terminating
+1792650029: mosquitto version 2.0.20 starting
+1792650029: Config loaded from /tmp/iot_ml_book_mosquitto.conf.
+1792650029: Opening ipv4 listen socket on port 1883.
+1792650029: mosquitto version 2.0.20 running
+1792650032: New connection from 127.0.0.1:46933 on port 1883.
+1792650032: New client connected from 127.0.0.1:46933 as publisher-room01 (p2, c1, k60).
+1792650033: New connection from 127.0.0.1:50609 on port 1883.
+1792650033: New client connected from 127.0.0.1:50609 as subscriber-room01 (p2, c1, k60).
+1792650047: Client subscriber-room01 closed its connection.
+1792650047: New connection from 127.0.0.1:33575 on port 1883.
+1792650047: New client connected from 127.0.0.1:33575 as subscriber-all-lab1 (p2, c1, k60).
+1792650051: New connection from 127.0.0.1:45839 on port 1883.
+1792650051: New client connected from 127.0.0.1:45839 as uji-room02 (p2, c1, k60).
+1792650051: Client uji-room02 disconnected.
+1792650051: New connection from 127.0.0.1:38099 on port 1883.
+1792650051: New client connected from 127.0.0.1:38099 as uji-room03 (p2, c1, k60).
+1792650051: Client uji-room03 disconnected.
+1792650061: Client subscriber-all-lab1 closed its connection.
+1792650061: New connection from 127.0.0.1:56701 on port 1883.
+1792650061: New client connected from 127.0.0.1:56701 as subscriber-validated (p2, c1, k60).
+1792650063: New connection from 127.0.0.1:50237 on port 1883.
+1792650063: New client connected from 127.0.0.1:50237 as publisher-anomali (p2, c1, k60).
+1792650063: Client publisher-anomali disconnected.
+1792650063: New connection from 127.0.0.1:49007 on port 1883.
+1792650063: New client connected from 127.0.0.1:49007 as publisher-anomali (p2, c1, k60).
+1792650063: Client publisher-anomali disconnected.
+1792650072: Client subscriber-validated disconnected.
+1792650072: Client publisher-room01 closed its connection.
+1792650072: mosquitto version 2.0.20 terminating

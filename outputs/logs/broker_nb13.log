@@ -1,25 +1,19 @@
 [INFO] Broker MQTT Mosquitto aktif di 127.0.0.1:1883
 [INFO] Tekan Ctrl+C untuk menghentikan broker.
-1792653976: Info: running mosquitto as user: sulhanhadi.
-1792653976: mosquitto version 2.1.2 starting
-1792653976: Config loaded from /var/folders/05/lm51jlmx267gpqt0s_p34x8h0000gn/T/iot_ml_book_mosquitto.conf.
-1792653976: Bridge support available.
-1792653976: Persistence support available.
-1792653976: TLS support available.
-1792653976: TLS-PSK support available.
-1792653976: Websockets support available.
-1792653976: Opening ipv4 listen socket on port 1883.
-1792653976: mosquitto version 2.1.2 running
-1792653979: New connection from 127.0.0.1:62375 on port 1883.
-1792653979: New client connected from 127.0.0.1:62375 as subscriber-verify-room01 (p4, c1, k60).
-1792653981: New connection from 127.0.0.1:62385 on port 1883.
-1792653981: New client connected from 127.0.0.1:62385 as csv-publisher-room01 (p4, c1, k60).
-1792653982: Client subscriber-verify-room01 [127.0.0.1:62375] disconnected.
-1792653983: Client csv-publisher-room01 [127.0.0.1:62385] disconnected.
-1792653983: New connection from 127.0.0.1:62389 on port 1883.
-1792653983: New client connected from 127.0.0.1:62389 as subscriber-verify-room01 (p4, c1, k60).
-1792653984: New connection from 127.0.0.1:62393 on port 1883.
-1792653984: New client connected from 127.0.0.1:62393 as multi-topic-publisher (p4, c1, k60).
-1792653990: Client multi-topic-publisher [127.0.0.1:62393] disconnected.
-1792654008: Client subscriber-verify-room01 [127.0.0.1:62389] disconnected.
-1792654008: mosquitto version 2.1.2 terminating
+1792650180: mosquitto version 2.0.20 starting
+1792650180: Config loaded from /tmp/iot_ml_book_mosquitto.conf.
+1792650180: Opening ipv4 listen socket on port 1883.
+1792650180: mosquitto version 2.0.20 running
+1792650183: New connection from 127.0.0.1:34153 on port 1883.
+1792650183: New client connected from 127.0.0.1:34153 as subscriber-verify-room01 (p2, c1, k60).
+1792650185: New connection from 127.0.0.1:33197 on port 1883.
+1792650185: New client connected from 127.0.0.1:33197 as csv-publisher-room01 (p2, c1, k60).
+1792650186: Client subscriber-verify-room01 disconnected.
+1792650187: Client csv-publisher-room01 disconnected.
+1792650187: New connection from 127.0.0.1:42825 on port 1883.
+1792650187: New client connected from 127.0.0.1:42825 as subscriber-verify-room01 (p2, c1, k60).
+1792650188: New connection from 127.0.0.1:53709 on port 1883.
+1792650188: New client connected from 127.0.0.1:53709 as multi-topic-publisher (p2, c1, k60).
+1792650193: Client multi-topic-publisher disconnected.
+1792650212: Client subscriber-verify-room01 disconnected.
+1792650212: mosquitto version 2.0.20 terminating
