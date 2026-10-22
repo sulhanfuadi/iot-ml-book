@@ -259,3 +259,14 @@ iot-ml-book/
   python scripts/plot_room_features.py
   ```
 - **Notebook Interaktif:** `notebooks/13_feature_timeseries.ipynb`.
+
+### Hands-on 15: Fitur Getaran Sederhana (RMS, Peak, Kurtosis)
+- **Ekstraksi fitur per jendela ke `data/processed/vibration_window_features.csv`:**
+  ```bash
+  python scripts/feature_vibration_machine.py
+  ```
+- **Visualisasi fitur (`outputs/figures/vibration_window_features.png`):**
+  ```bash
+  python scripts/plot_vibration_features.py
+  ```
+- **Notebook Interaktif:** `notebooks/14_feature_vibration.ipynb`.
