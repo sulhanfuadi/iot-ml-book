@@ -488,3 +488,15 @@ iot-ml-book/
 - **Dashboard (opsional, sesuai buku):** jalankan InfluxDB 2 (`docker run -d -p 8086:8086 influxdb:2`, org `iotlab`, bucket `sensor_data`) dan Grafana (`docker run -d -p 3000:3000 grafana/grafana-oss`), tambahkan InfluxDB sebagai data source, lalu susun panel suhu/kelembaban/CO2/daya/status dengan ambang warna normal-hijau, warning-kuning, fault-merah.
 - **Output CSV:** `outputs/reports/pipeline_room_predictions.csv`.
 - **Notebook Interaktif:** `notebooks/31_pipeline_lengkap.ipynb`.
+
+### Hands-on 31 (Bab 12): Alert Sederhana untuk Skor Anomali Tinggi
+- **Subscriber pipeline + alert (alert ke topik `iotlab/room01/alert` dan CSV `outputs/reports/pipeline_room_alerts.csv`):**
+  ```bash
+  python scripts/pipeline_room_with_alert.py --max-messages 10 --timeout 60
+  ```
+- **Pantau topik alert di terminal lain:**
+  ```bash
+  python scripts/mqtt/subscribe_sensor.py --topic "iotlab/room01/alert"
+  ```
+- **Aturan alert:** model memprediksi FAULT, atau suhu > 32 C dan CO2 > 1200 ppm bersamaan. Tambahkan `--influx --influx-token <token>` untuk storage InfluxDB sesuai buku.
+- **Notebook Interaktif:** `notebooks/32_pipeline_alert.ipynb`.
