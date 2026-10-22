@@ -44,6 +44,25 @@ Catatan:
 - Notebook 00-02 memakai kernel bernama `iot-ml-book` (perintah `ipykernel install` di atas).
 - Jalankan satu notebook MQTT pada satu waktu; notebook memulai dan menghentikan broker sendiri.
 
+---
+
+## Figur persis sesuai buku
+
+Skrip plot di repositori menghasilkan versi yang lebih kaya. Figur dengan judul, label sumbu, ukuran, dan nama file persis seperti listing buku dibuat oleh satu skrip:
+
+```bash
+python scripts/book_figures.py            # semua
+python scripts/book_figures.py --only rmsstd
+```
+
+| Hands-on | Opsi | File |
+|---|---|---|
+| 8 | `anomaly` | `outputs/figures/anomaly_temperature_rule.png` |
+| 9 | `room` | `outputs/figures/room_30days_sample.png` |
+| 11 | `vibration` | `outputs/figures/vibration_fault_injection.png` |
+| 14 | `features` | `outputs/figures/room_temp_ma6.png` |
+| 15 | `rmsstd` | `outputs/figures/vibration_features_rms_std.png` |
+
 ## Struktur Direktori
 
 ```text

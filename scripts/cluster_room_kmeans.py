@@ -72,7 +72,7 @@ def main():
       s=10,
       cmap="viridis",
   )
-  plt.title("K-Means Clustering: Suhu vs Kelembaban")
+  plt.title("K-Means Clustering: Suhu vs kelembaban")
   plt.xlabel("Temperature (C)")
   plt.ylabel("Humidity (%)")
   plt.colorbar(label="Cluster")
