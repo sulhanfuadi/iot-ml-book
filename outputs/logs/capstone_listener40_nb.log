@@ -1,17 +1,3 @@
 [INFO] Menunggu alert di topik: capstone/iotnode01/alert
 
-=== NOTIFIKASI ALERT ===
-Waktu   : 2026-10-22T14:35:05
-Device  : iotnode01
-Alasan  : iforest
-Daya    : 256.94 W
-Arus    : 5.17 A
-
-=== NOTIFIKASI ALERT ===
-Waktu   : 2026-10-22T14:35:13
-Device  : iotnode01
-Alasan  : iforest
-Daya    : 248.1 W
-Arus    : 3.89 A
-
-[SUKSES] 2 notifikasi disimpan ke outputs/reports/capstone_notifications.csv
+[INFO] Tidak ada alert diterima dalam batas waktu.

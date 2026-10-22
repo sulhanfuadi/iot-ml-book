@@ -89,10 +89,3 @@
 2026-10-22T13:21:03.833335 - TIDAK_VALID [kampus/lab1/room03/telemetry] {"device_id": "room03", "temperature_c": 95.0, "humidity_pct": 50.0, "co2_ppm": 700, "power_watt": 120.0, "timestamp": "2026-10-22T00:00:00"}
 2026-10-22T13:21:07.838507 - VALID [kampus/lab1/room01/telemetry] {"device_id": "room01", "temperature_c": 25.49, "humidity_pct": 56.21, "co2_ppm": 515, "power_watt": 102.57, "timestamp": "2026-10-22T13:21:07"}
 2026-10-22T13:21:12.838840 - VALID [kampus/lab1/room01/telemetry] {"device_id": "room01", "temperature_c": 28.86, "humidity_pct": 53.38, "co2_ppm": 868, "power_watt": 107.95, "timestamp": "2026-10-22T13:21:12"}
-2026-10-22T14:11:18.438818 - VALID [kampus/lab1/room01/telemetry] {"device_id": "room01", "temperature_c": 27.2, "humidity_pct": 60.55, "co2_ppm": 484, "power_watt": 120.98, "timestamp": "2026-10-22T14:11:18"}
-2026-10-22T14:11:23.445238 - VALID [kampus/lab1/room01/telemetry] {"device_id": "room01", "temperature_c": 29.74, "humidity_pct": 45.7, "co2_ppm": 775, "power_watt": 143.86, "timestamp": "2026-10-22T14:11:23"}
-2026-10-22T14:11:28.449686 - VALID [kampus/lab1/room01/telemetry] {"device_id": "room01", "temperature_c": 26.97, "humidity_pct": 56.93, "co2_ppm": 739, "power_watt": 106.54, "timestamp": "2026-10-22T14:11:28"}
-2026-10-22T14:24:15.447755 - VALID [kampus/lab1/room01/telemetry] {"device_id": "room01", "temperature_c": 29.12, "humidity_pct": 56.58, "co2_ppm": 853, "power_watt": 130.33, "timestamp": "2026-10-22T14:24:15"}
-2026-10-22T14:24:16.393083 - TIDAK_VALID [kampus/lab1/room03/telemetry] {"device_id": "room03", "temperature_c": 95.0, "humidity_pct": 50.0, "co2_ppm": 700, "power_watt": 120.0, "timestamp": "2026-10-22T00:00:00"}
-2026-10-22T14:24:20.453395 - VALID [kampus/lab1/room01/telemetry] {"device_id": "room01", "temperature_c": 29.49, "humidity_pct": 63.01, "co2_ppm": 471, "power_watt": 144.07, "timestamp": "2026-10-22T14:24:20"}
-2026-10-22T14:24:25.454389 - VALID [kampus/lab1/room01/telemetry] {"device_id": "room01", "temperature_c": 28.84, "humidity_pct": 53.5, "co2_ppm": 841, "power_watt": 108.16, "timestamp": "2026-10-22T14:24:25"}
