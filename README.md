@@ -141,3 +141,18 @@ iot-ml-book/
   ```
   Memerlukan server InfluxDB (di buku: Docker `influxdb:2.7` pada port 8086).
 - **Notebook Interaktif:** `notebooks/04_simpan_data_storage.ipynb`.
+
+### Hands-on 6: Eksplorasi Dataset Sensor dengan pandas
+- **Bangkitkan dataset sintetis 1 minggu (`data/raw/room_sensor_week.csv`, 1008 baris @ 10 menit):**
+  ```bash
+  python scripts/generate_room_sensor_week.py
+  ```
+- **Eksplorasi struktur, time-series index, ringkasan operasional, korelasi:**
+  ```bash
+  python scripts/explore_sensor_dataset.py
+  ```
+- **Visualisasi eksploratif ke `outputs/figures/`:**
+  ```bash
+  python scripts/plot_exploration.py
+  ```
+- **Notebook Interaktif:** `notebooks/05_eksplorasi_dataset.ipynb`.
