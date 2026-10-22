@@ -319,3 +319,15 @@ iot-ml-book/
   python scripts/plot_regression_predictions.py
   ```
 - **Notebook Interaktif:** `notebooks/19_regression_energy.ipynb`.
+
+### Hands-on 24: Klasifikasi Status Perangkat (normal, warning, fault)
+- **Siapkan dataset multi-kelas ke `data/processed/classification_status/`:**
+  ```bash
+  python scripts/prepare_multiclass_status_dataset.py
+  ```
+- **Latih dan evaluasi model:**
+  ```bash
+  python scripts/classification_logreg_status.py
+  python scripts/classification_rf_status.py
+  ```
+- **Notebook Interaktif:** `notebooks/20_classification_status.ipynb`.
