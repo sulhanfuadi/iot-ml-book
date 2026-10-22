@@ -346,3 +346,15 @@ iot-ml-book/
   python scripts/compare_three_regressors.py
   ```
 - **Notebook Interaktif:** `notebooks/21_compare_models.ipynb`.
+
+### Hands-on 21 (Bab 9): Clustering Pola Ruangan Suhu-Kelembaban
+- **K-Means (uji K=2..5, laporan + scatter):**
+  ```bash
+  python scripts/cluster_room_kmeans.py
+  ```
+- **DBSCAN (pola + deteksi noise):**
+  ```bash
+  python scripts/cluster_room_dbscan.py
+  ```
+- **Output:** `outputs/reports/room_kmeans_cluster.csv`, `outputs/reports/room_dbscan_cluster.csv`, `outputs/figures/room_kmeans_scatter.png`, `outputs/figures/room_dbscan_scatter.png`.
+- **Notebook Interaktif:** `notebooks/22_clustering_room.ipynb`.
