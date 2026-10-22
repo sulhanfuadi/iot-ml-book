@@ -73,6 +73,16 @@ Jalur Docker: `cd docker && docker compose up -d` (Mosquitto 1883, InfluxDB 8086
 
 Status uji: Mosquitto 2.0.20, InfluxDB 2.7.10 dan Grafana 11.3.0 diuji nyata secara native (penulisan data HO5, HO30/31 dan capstone, datasource sehat, 8 panel mengembalikan data). File `docker/docker-compose.yml` belum diuji karena tidak ada Docker di lingkungan pengembangan.
 
+## Penyimpangan yang disengaja dari buku
+
+Semua skrip dengan blok "Buat file" di buku memakai kode buku apa adanya (diekstrak dari tata letak PDF). Pengecualian yang didokumentasikan:
+
+- `scripts/inference/train_capstone_iforest.py`: baseline normal buku (mean 140 W, std 20 W) tidak cocok dengan rentang payload publisher capstone sehingga hampir separuh data normal ditandai anomali. Baseline disesuaikan; formula model (IsolationForest n_estimators=200, contamination=0.05, random_state=42) tetap persis buku.
+- `scripts/alert_score_demo.py` (alert berbasis skor Hands-on 31), `scripts/book_figures.py` (gambar buku) dan `scripts/mqtt/run_broker.py` (pembantu broker Mosquitto/amqtt) adalah alat tambahan, bukan dari buku.
+- `scripts/capstone_alert_listener.py`, `scripts/mqtt/subscribe_validated.py`, `scripts/mqtt/publish_csv_to_mqtt.py`, `scripts/mqtt/publish_multi_topic.py` dan `scripts/mqtt/subscribe_verify_mqtt.py` tidak punya blok "Buat file" bernama sama di buku dan memiliki opsi baris perintah opsional.
+- Notebook menjalankan skrip MQTT buku sebagai subprocess dengan timeout eksternal (skrip buku tidak berhenti sendiri) dan membaca hasil subscriber dari InfluxDB.
+- Docker compose, Raspberry Pi dan macOS fisik belum diuji di lingkungan pengembangan ini; lihat `prompt_test_lokal.md`.
+
 ## Skrip persis buku (nama file sama dengan buku)
 
 Skrip berikut disalin dari buku tanpa perubahan logika (indentasi 4 spasi dan satu baris yang terpotong halaman PDF disambung). Skrip bernama sama di `scripts/mqtt/` dan `scripts/uji_lingkungan.py` adalah versi berparameter untuk eksekusi terbatas.
