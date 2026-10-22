@@ -281,3 +281,10 @@ iot-ml-book/
   python scripts/plot_pca_room.py
   ```
 - **Notebook Interaktif:** `notebooks/15_pca_room_features.ipynb`.
+
+### Hands-on 20: Menyiapkan Dataset Klasifikasi Normal vs Abnormal
+- **Siapkan fitur + split time-aware 70/15/15 ke `data/processed/classification_room/`:**
+  ```bash
+  python scripts/prepare_classification_dataset.py
+  ```
+- **Notebook Interaktif:** `notebooks/16_prepare_classification.ipynb`.
