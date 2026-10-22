@@ -52,8 +52,7 @@ def main():
     except Exception as exc:
       print("[ERROR] Payload alert tidak valid:", exc)
 
-  client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2,
-                       client_id="capstone-alert-listener")
+  client = mqtt.Client(client_id="capstone-alert-listener")
   client.on_connect = on_connect
   client.on_message = on_message
   client.connect(BROKER, PORT, 60)

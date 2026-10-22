@@ -19,10 +19,7 @@ CLIENT_ID = "publisher-greenhouse-zone1"
 
 
 def create_mqtt_client(client_id):
-  try:
-    return mqtt.Client(mqtt.CallbackAPIVersion.VERSION2, client_id=client_id)
-  except AttributeError:
-    return mqtt.Client(client_id=client_id)
+  return mqtt.Client(client_id=client_id)
 
 
 def generate_greenhouse_data():
@@ -40,7 +37,7 @@ def main():
       description="Greenhouse MQTT Telemetry Publisher"
   )
   parser.add_argument(
-      "--broker", default=BROKER_HOST, help="MQTT Broker Host (default: 1883)"
+      "--broker", default=BROKER_HOST, help="MQTT Broker Host (default: localhost)"
   )
   parser.add_argument(
       "--port",

@@ -121,7 +121,7 @@ def main():
     except Exception as exc:
       print("[ERROR] Gagal memproses pesan:", exc)
 
-  client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2, client_id="casea-room-sub")
+  client = mqtt.Client(client_id="casea-room-sub")
   client.on_connect = on_connect
   client.on_message = on_message
   client.connect(BROKER, 1883, 60)

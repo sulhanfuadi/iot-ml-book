@@ -24,7 +24,7 @@ def main():
   args = parser.parse_args()
 
   rng = random.Random()
-  client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2, client_id="casea-room-pub")
+  client = mqtt.Client(client_id="casea-room-pub")
   client.connect(BROKER, 1883, 60)
   client.loop_start()
 

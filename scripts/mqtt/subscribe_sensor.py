@@ -22,10 +22,7 @@ LOG_PATH = Path("outputs/logs/subscriber_room01.log")
 
 
 def create_mqtt_client(client_id):
-  try:
-    return mqtt.Client(mqtt.CallbackAPIVersion.VERSION2, client_id=client_id)
-  except AttributeError:
-    return mqtt.Client(client_id=client_id)
+  return mqtt.Client(client_id=client_id)
 
 
 def log_line(text):

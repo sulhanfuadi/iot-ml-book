@@ -49,7 +49,7 @@ def main():
 
   model = joblib.load(MODEL_PATH)
 
-  client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2, client_id="edge-room-classifier")
+  client = mqtt.Client(client_id="edge-room-classifier")
   client.connect(args.host, args.port, 60)
   client.loop_start()
 

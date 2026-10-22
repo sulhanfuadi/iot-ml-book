@@ -158,8 +158,7 @@ def main():
     except Exception as exc:
       print("[ERROR]", exc)
 
-  client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2,
-                       client_id="capstone-subscriber-alert")
+  client = mqtt.Client(client_id="capstone-subscriber-alert")
   client.on_connect = on_connect
   client.on_message = on_message
   client.connect(BROKER, PORT, 60)

@@ -28,7 +28,7 @@ def main():
 
   rng = random.Random(args.seed)
 
-  client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2, client_id="capstone-publisher")
+  client = mqtt.Client(client_id="capstone-publisher")
   client.connect(BROKER, PORT, 60)
   client.loop_start()
 

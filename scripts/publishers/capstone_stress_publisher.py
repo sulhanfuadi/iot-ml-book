@@ -25,7 +25,7 @@ def main():
   args = parser.parse_args()
 
   rng = random.Random()
-  client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2, client_id="capstone-stress-publisher")
+  client = mqtt.Client(client_id="capstone-stress-publisher")
   client.connect(BROKER, PORT, 60)
   client.loop_start()
 
