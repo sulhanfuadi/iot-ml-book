@@ -156,3 +156,14 @@ iot-ml-book/
   python scripts/plot_exploration.py
   ```
 - **Notebook Interaktif:** `notebooks/05_eksplorasi_dataset.ipynb`.
+
+### Hands-on 7: Membersihkan Timestamp, Resampling, dan Imputasi
+- **Bangkitkan dataset kotor (`data/raw/room_sensor_dirty.csv`):**
+  ```bash
+  python scripts/generate_dirty_dataset.py
+  ```
+- **Cleaning + resample 10 menit + imputasi (`data/processed/room_sensor_clean.csv`):**
+  ```bash
+  python scripts/clean_timestamp_resample.py
+  ```
+- **Notebook Interaktif:** `notebooks/06_cleaning_resampling.ipynb`.
