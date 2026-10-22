@@ -185,3 +185,14 @@ iot-ml-book/
   python scripts/plot_anomaly.py
   ```
 - **Notebook Interaktif:** `notebooks/07_deteksi_anomali.ipynb`.
+
+### Hands-on 9: Generator Data Suhu-Kelembaban Ruangan 30 Hari
+- **Generate dataset (`data/synthetic/room_30days.csv`, 4320 baris):**
+  ```bash
+  python scripts/generate_room_30days.py
+  ```
+- **Visualisasi (`outputs/figures/room_30days*.png`):**
+  ```bash
+  python scripts/plot_room_30days.py
+  ```
+- **Notebook Interaktif:** `notebooks/08_generate_room_30days.ipynb`.
