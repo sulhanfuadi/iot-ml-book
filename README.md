@@ -167,3 +167,21 @@ iot-ml-book/
   python scripts/clean_timestamp_resample.py
   ```
 - **Notebook Interaktif:** `notebooks/06_cleaning_resampling.ipynb`.
+
+### Hands-on 8: Deteksi Anomali Dasar (Aturan Domain, Z-Score, IQR)
+- **Bangkitkan dataset dengan anomali (`data/raw/room_sensor_anomaly.csv`):**
+  ```bash
+  python scripts/generate_anomaly_dataset.py
+  ```
+- **Deteksi per metode:**
+  ```bash
+  python scripts/detect_anomaly_rules.py
+  python scripts/detect_anomaly_zscore.py
+  python scripts/detect_anomaly_iqr.py
+  ```
+- **Versi gabungan + visualisasi (`data/processed/room_sensor_anomaly_flags.csv`, `outputs/figures/anomali_*.png`):**
+  ```bash
+  python scripts/detect_anomaly_all.py
+  python scripts/plot_anomaly.py
+  ```
+- **Notebook Interaktif:** `notebooks/07_deteksi_anomali.ipynb`.
