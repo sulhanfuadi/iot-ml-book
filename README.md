@@ -211,3 +211,14 @@ iot-ml-book/
   python scripts/plot_energy_workhours.py
   ```
 - **Notebook Interaktif:** `notebooks/09_generate_energy.ipynb`.
+
+### Hands-on 11: Generator Data Getaran Mesin dengan Fault Injection
+- **Generate sinyal getaran + fault (`data/synthetic/vibration_fault_injection.csv`, 3000 sampel):**
+  ```bash
+  python scripts/generate_vibration_fault.py
+  ```
+- **Visualisasi (`outputs/figures/vibration_fault*.png`):**
+  ```bash
+  python scripts/plot_vibration_fault.py
+  ```
+- **Notebook Interaktif:** `notebooks/10_generate_vibration_fault.ipynb`.
