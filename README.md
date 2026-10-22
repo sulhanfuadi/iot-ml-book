@@ -288,3 +288,10 @@ iot-ml-book/
   python scripts/prepare_classification_dataset.py
   ```
 - **Notebook Interaktif:** `notebooks/16_prepare_classification.ipynb`.
+
+### Hands-on 21: Menyiapkan Dataset Regresi Prediksi Konsumsi Energi
+- **Siapkan fitur + target 1 langkah ke depan + split time-aware ke `data/processed/regression_energy/`:**
+  ```bash
+  python scripts/prepare_regression_energy_dataset.py
+  ```
+- **Notebook Interaktif:** `notebooks/17_prepare_regression_energy.ipynb`.
