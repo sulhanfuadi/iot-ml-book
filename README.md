@@ -407,3 +407,18 @@ iot-ml-book/
   python scripts/plot_room_forecast_comparison.py
   ```
 - **Notebook Interaktif:** `notebooks/25_forecasting_suhu.ipynb`.
+
+### Hands-on 25 (Bab 10): Forecasting Konsumsi Energi Harian
+- **Baseline Linear Regression:**
+  ```bash
+  python scripts/forecast_energy_linear.py
+  ```
+- **Random Forest Regressor:**
+  ```bash
+  python scripts/forecast_energy_rf.py
+  ```
+- **Visualisasi perbandingan:**
+  ```bash
+  python scripts/plot_energy_forecast.py
+  ```
+- **Notebook Interaktif:** `notebooks/26_forecasting_energi.ipynb`.
