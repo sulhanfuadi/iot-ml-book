@@ -554,3 +554,14 @@ iot-ml-book/
   python scripts/case_b_detect_and_classify.py
   ```
 - **Notebook Interaktif:** `notebooks/37_studi_kasus_b.ipynb`.
+
+### Hands-on 37: Studi Kasus C - Smart Energy Analytics
+- **Generate data energi (ke `data/synthetic/case_c_energy.csv`):**
+  ```bash
+  python scripts/case_c_generate_energy.py
+  ```
+- **Forecasting beban + alert (ke `outputs/reports/case_c_energy_results.csv`):**
+  ```bash
+  python scripts/case_c_energy_forecast_alert.py
+  ```
+- **Notebook Interaktif:** `notebooks/38_studi_kasus_c.ipynb`.
