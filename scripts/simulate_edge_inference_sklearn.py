@@ -13,7 +13,7 @@ from pathlib import Path
 import joblib
 import pandas as pd
 
-MODEL_PATH = Path("outputs/models/room_status_rf.joblib")
+MODEL_PATH = Path("models/room_status_rf.joblib")
 DATA_PATH = Path("data/processed/classification_status/test.csv")
 
 FEATURE_COLS = [

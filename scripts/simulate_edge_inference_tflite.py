@@ -16,7 +16,7 @@ from pathlib import Path
 import pandas as pd
 import tensorflow as tf
 
-MODEL_PATH = Path("outputs/models/room_binary.tflite")
+MODEL_PATH = Path("models/room_binary.tflite")
 DATA_PATH = Path("data/processed/classification_room/test.csv")
 
 

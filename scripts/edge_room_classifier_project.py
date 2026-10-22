@@ -15,7 +15,7 @@ from pathlib import Path
 import joblib
 import pandas as pd
 
-MODEL_PATH = Path("outputs/models/room_status_rf.joblib")
+MODEL_PATH = Path("models/room_status_rf.joblib")
 OUTPUT_LOG = Path("outputs/reports/edge_room_predictions.csv")
 
 

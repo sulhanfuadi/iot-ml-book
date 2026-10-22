@@ -4,7 +4,7 @@ Buku Referensi: IoT Terintegrasi dengan Machine Learning & Data Analytics (Onno 
 
 Label aturan sederhana: nyaman jika suhu 24-28 C, kelembaban 45-65%, CO2 < 1000;
 selain itu tidak_nyaman. Fitur: 9 fitur lingkungan + lag/rolling.
-Output: outputs/models/case_a_room_rf.joblib, outputs/reports/case_a_evaluation.csv
+Output: models/case_a_room_rf.joblib, outputs/reports/case_a_evaluation.csv
 """
 
 from pathlib import Path
@@ -20,7 +20,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 
 INPUT_PATH = Path("data/synthetic/room_classification_dataset.csv")
-MODEL_PATH = Path("outputs/models/case_a_room_rf.joblib")
+MODEL_PATH = Path("models/case_a_room_rf.joblib")
 REPORT_PATH = Path("outputs/reports/case_a_evaluation.csv")
 
 FEATURE_COLS = [
