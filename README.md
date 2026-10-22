@@ -120,3 +120,24 @@ iot-ml-book/
   ```
 - **Notebook Interaktif:** `notebooks/03_subscribe_mqtt.ipynb` (menjalankan broker, 3 publisher, dan ketiga subscriber secara berurutan).
 - **Log Penerimaan:** Tersimpan di `outputs/logs/subscriber_room01.log`, `outputs/logs/subscriber_all_rooms.log`, dan `outputs/logs/subscriber_validated.log`.
+
+### Hands-on 5: Simpan Data MQTT ke CSV & SQLite
+- **Simpan telemetri ke CSV (`data/raw/mqtt_room01.csv`):**
+  ```bash
+  python scripts/mqtt/save_to_csv.py --max-messages 5 --timeout 25
+  ```
+- **Simpan telemetri ke SQLite (`data/raw/iot_sensor.db`):**
+  ```bash
+  python scripts/mqtt/save_to_sqlite.py --max-messages 5 --timeout 25
+  ```
+- **Pola gabungan multi-storage (CSV + SQLite sekaligus):**
+  ```bash
+  python scripts/mqtt/save_to_csv_sqlite.py --max-messages 5 --timeout 25
+  ```
+- **(Opsional, butuh server) Simpan ke InfluxDB:**
+  ```bash
+  pip install influxdb-client
+  python scripts/mqtt/save_to_influxdb.py --influx-url http://localhost:8086 --influx-token <TOKEN>
+  ```
+  Memerlukan server InfluxDB (di buku: Docker `influxdb:2.7` pada port 8086).
+- **Notebook Interaktif:** `notebooks/04_simpan_data_storage.ipynb`.
