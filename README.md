@@ -295,3 +295,14 @@ iot-ml-book/
   python scripts/prepare_regression_energy_dataset.py
   ```
 - **Notebook Interaktif:** `notebooks/17_prepare_regression_energy.ipynb`.
+
+### Hands-on 22: Evaluasi Baseline Model (Klasifikasi dan Regresi)
+- **Baseline klasifikasi (Logistic Regression + scaler):**
+  ```bash
+  python scripts/evaluate_baseline_classification.py
+  ```
+- **Baseline regresi (Linear Regression, simpan `test_predictions.csv`):**
+  ```bash
+  python scripts/evaluate_baseline_regression.py
+  ```
+- **Notebook Interaktif:** `notebooks/18_baseline_evaluation.ipynb`.
