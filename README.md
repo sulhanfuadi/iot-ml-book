@@ -306,3 +306,16 @@ iot-ml-book/
   python scripts/evaluate_baseline_regression.py
   ```
 - **Notebook Interaktif:** `notebooks/18_baseline_evaluation.ipynb`.
+
+### Hands-on 23: Prediksi Energi dengan Regresi (Linear, Ridge, Random Forest)
+- **Latih dan evaluasi tiap model (prediksi disimpan ke `data/processed/regression_energy/pred_*_test.csv`):**
+  ```bash
+  python scripts/regression_linear_energy.py
+  python scripts/regression_ridge_energy.py
+  python scripts/regression_rf_energy.py
+  ```
+- **Bandingkan prediksi (`outputs/figures/regression_predictions_compare.png`):**
+  ```bash
+  python scripts/plot_regression_predictions.py
+  ```
+- **Notebook Interaktif:** `notebooks/19_regression_energy.ipynb`.
