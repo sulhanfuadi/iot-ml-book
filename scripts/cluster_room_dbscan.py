@@ -56,7 +56,7 @@ def main():
       s=10,
       cmap="viridis",
   )
-  plt.title("DBSCAN: Suhu vs Kelembaban (label -1 = noise)")
+  plt.title("DBSCAN: Suhu vs kelembaban")
   plt.xlabel("Temperature (C)")
   plt.ylabel("Humidity (%)")
   plt.colorbar(label="Cluster")
