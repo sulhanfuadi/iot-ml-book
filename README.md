@@ -422,3 +422,23 @@ iot-ml-book/
   python scripts/plot_energy_forecast.py
   ```
 - **Notebook Interaktif:** `notebooks/26_forecasting_energi.ipynb`.
+
+### Hands-on 26 (Bab 10): Baseline vs Random Forest vs LSTM Mini
+- **Random Forest pada fitur lag:**
+  ```bash
+  python scripts/forecast_room_rf.py
+  ```
+- **Siapkan sequence LSTM (ke `data/processed/lstm_room/`):**
+  ```bash
+  python scripts/prepare_lstm_room_sequences.py
+  ```
+- **Latih LSTM mini (membutuhkan `pip install tensorflow-cpu`):**
+  ```bash
+  python scripts/lstm_room_forecast.py
+  ```
+- **Perbandingan akhir + bar chart:**
+  ```bash
+  python scripts/compare_room_forecast_models.py
+  python scripts/plot_room_forecast_model_comparison.py
+  ```
+- **Notebook Interaktif:** `notebooks/27_benchmark_forecasting.ipynb`.
