@@ -245,6 +245,24 @@ iot-ml-book/
   ```
 - **Notebook Interaktif:** `notebooks/07_deteksi_anomali.ipynb`.
 
+### Bab 4 (bagian 4.5 sampai 4.7): Data IoT Sintetis dengan Python
+Skrip ini ada di buku antara Hands-on 8 dan Hands-on 9.
+- **Generate data harian (`data/synthetic/*_daily_synthetic.csv`, `vibration_machine_synthetic.csv`):**
+  ```bash
+  python scripts/generate_room_synthetic.py
+  python scripts/generate_energy_synthetic.py
+  python scripts/generate_vibration_synthetic.py
+  ```
+- **Menambahkan masalah buatan (missing value, drift, outlier):** `python scripts/inject_data_issues.py`
+- **Label sintetis:**
+  ```bash
+  python scripts/label_room_comfort_daily.py
+  python scripts/label_energy_status_daily.py
+  python scripts/label_energy_efficiency_daily.py
+  ```
+- **Validasi sederhana:** `python scripts/validate_synthetic_room.py`
+- **Notebook Interaktif:** `notebooks/08a_bab4_data_sintetik.ipynb`.
+
 ### Hands-on 9: Generator Data Suhu-Kelembaban Ruangan 30 Hari
 - **Generate dataset (`data/synthetic/room_30days.csv`, 4320 baris):**
   ```bash
