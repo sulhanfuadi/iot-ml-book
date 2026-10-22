@@ -1,19 +1,29 @@
 [INFO] Broker MQTT Mosquitto aktif di 127.0.0.1:1883
 [INFO] Tekan Ctrl+C untuk menghentikan broker.
-1792650079: mosquitto version 2.0.20 starting
-1792650079: Config loaded from /tmp/iot_ml_book_mosquitto.conf.
-1792650079: Opening ipv4 listen socket on port 1883.
-1792650079: mosquitto version 2.0.20 running
-1792650082: New connection from 127.0.0.1:58537 on port 1883.
-1792650082: New client connected from 127.0.0.1:58537 as publisher-room01 (p2, c1, k60).
-1792650083: New connection from 127.0.0.1:52135 on port 1883.
-1792650083: New client connected from 127.0.0.1:52135 as auto-09322920-BB7F-8C09-89F0-B2EB5DD22628 (p2, c1, k60).
-1792650101: Client auto-09322920-BB7F-8C09-89F0-B2EB5DD22628 closed its connection.
-1792650101: New connection from 127.0.0.1:53363 on port 1883.
-1792650101: New client connected from 127.0.0.1:53363 as auto-B679B388-B976-A4E1-31D9-17BBF268FF76 (p2, c1, k60).
-1792650119: Client auto-B679B388-B976-A4E1-31D9-17BBF268FF76 closed its connection.
-1792650119: New connection from 127.0.0.1:36311 on port 1883.
-1792650119: New client connected from 127.0.0.1:36311 as auto-EB4ECA9C-018C-0C28-4AD3-D3928796E605 (p2, c1, k60).
-1792650137: Client auto-EB4ECA9C-018C-0C28-4AD3-D3928796E605 closed its connection.
-1792650137: Client publisher-room01 closed its connection.
-1792650137: mosquitto version 2.0.20 terminating
+1792653869: Info: running mosquitto as user: sulhanhadi.
+1792653869: mosquitto version 2.1.2 starting
+1792653869: Config loaded from /var/folders/05/lm51jlmx267gpqt0s_p34x8h0000gn/T/iot_ml_book_mosquitto.conf.
+1792653869: Bridge support available.
+1792653869: Persistence support available.
+1792653869: TLS support available.
+1792653869: TLS-PSK support available.
+1792653869: Websockets support available.
+1792653869: Opening ipv4 listen socket on port 1883.
+1792653869: mosquitto version 2.1.2 running
+1792653872: New connection from 127.0.0.1:62043 on port 1883.
+1792653872: New client connected from 127.0.0.1:62043 as publisher-room01 (p4, c1, k60).
+1792653873: New connection from 127.0.0.1:62045 on port 1883.
+1792653873: New client connected from 127.0.0.1:62045 as auto-B6780FDB-DC05-067A-5CE1-BD7642A38E27 (p4, c1, k60).
+1792653891: Client auto-B6780FDB-DC05-067A-5CE1-BD7642A38E27 [127.0.0.1:62045] disconnected: connection closed by client.
+1792653891: Client auto-B6780FDB-DC05-067A-5CE1-BD7642A38E27 [127.0.0.1:62045] disconnected: connection closed by client.
+1792653891: New connection from 127.0.0.1:62059 on port 1883.
+1792653891: New client connected from 127.0.0.1:62059 as auto-57F552A9-346A-64B6-500A-0C1C02776B73 (p4, c1, k60).
+1792653909: Client auto-57F552A9-346A-64B6-500A-0C1C02776B73 [127.0.0.1:62059] disconnected: connection closed by client.
+1792653909: Client auto-57F552A9-346A-64B6-500A-0C1C02776B73 [127.0.0.1:62059] disconnected: connection closed by client.
+1792653909: New connection from 127.0.0.1:62075 on port 1883.
+1792653909: New client connected from 127.0.0.1:62075 as auto-20454204-659E-1E2E-1AD4-5CBE98ADFB96 (p4, c1, k60).
+1792653927: Client auto-20454204-659E-1E2E-1AD4-5CBE98ADFB96 [127.0.0.1:62075] disconnected: connection closed by client.
+1792653927: Client auto-20454204-659E-1E2E-1AD4-5CBE98ADFB96 [127.0.0.1:62075] disconnected: connection closed by client.
+1792653927: Client publisher-room01 [127.0.0.1:62043] disconnected: connection closed by client.
+1792653927: Client publisher-room01 [127.0.0.1:62043] disconnected: connection closed by client.
+1792653927: mosquitto version 2.1.2 terminating
