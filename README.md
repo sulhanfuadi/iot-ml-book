@@ -464,3 +464,14 @@ iot-ml-book/
   python scripts/simulate_edge_inference_tflite.py --max-rows 30 --delay 0.05
   ```
 - **Notebook Interaktif:** `notebooks/29_edge_inference.ipynb`.
+
+### Hands-on 29 (Bab 11): Mini Proyek Klasifikasi Edge (Raspberry Pi / Emulator)
+- **Versi tanpa MQTT (log ke `outputs/reports/edge_room_predictions.csv`):**
+  ```bash
+  python scripts/edge_room_classifier_project.py --steps 30 --delay 0.05
+  ```
+- **Versi dengan MQTT (butuh broker lokal, misal `python scripts/mqtt/run_broker.py`):**
+  ```bash
+  python scripts/edge_room_classifier_mqtt.py --steps 20 --delay 0.05
+  ```
+- **Notebook Interaktif:** `notebooks/30_mini_proyek_edge.ipynb`.
