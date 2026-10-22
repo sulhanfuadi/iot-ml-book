@@ -99,3 +99,24 @@ iot-ml-book/
   ```
 - **Notebook Interaktif:** `notebooks/02_kirim_data_mqtt.ipynb`.
 - **Log Pengiriman:** Tersimpan di `outputs/logs/publisher_room01.log` dan `outputs/logs/publisher_greenhouse.log`.
+
+### Hands-on 4: Subscribe Data MQTT dengan Python
+- **Broker lokal tanpa instalasi sistem (pengembangan):**
+  ```bash
+  python scripts/mqtt/run_broker.py
+  ```
+  (Di lab/produksi, buku memakai Eclipse Mosquitto: `mosquitto -v`.)
+- **Subscriber sederhana (satu topik `kampus/lab1/room01/telemetry`):**
+  ```bash
+  python scripts/mqtt/subscribe_sensor.py --max-messages 3 --timeout 25
+  ```
+- **Subscriber wildcard multi-ruangan (`kampus/lab1/+/telemetry`):**
+  ```bash
+  python scripts/mqtt/subscribe_all_rooms.py --max-messages 6 --timeout 25
+  ```
+- **Subscriber dengan validasi payload (rentang suhu/kelembaban/CO2):**
+  ```bash
+  python scripts/mqtt/subscribe_validated.py --timeout 10
+  ```
+- **Notebook Interaktif:** `notebooks/03_subscribe_mqtt.ipynb` (menjalankan broker, 3 publisher, dan ketiga subscriber secara berurutan).
+- **Log Penerimaan:** Tersimpan di `outputs/logs/subscriber_room01.log`, `outputs/logs/subscriber_all_rooms.log`, dan `outputs/logs/subscriber_validated.log`.
