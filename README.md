@@ -270,3 +270,14 @@ iot-ml-book/
   python scripts/plot_vibration_features.py
   ```
 - **Notebook Interaktif:** `notebooks/14_feature_vibration.ipynb`.
+
+### Hands-on 16: PCA untuk Merangkum Beberapa Sensor
+- **Standarisasi + PCA 3 komponen ke `data/processed/room_30days_pca.csv`:**
+  ```bash
+  python scripts/pca_room_features.py
+  ```
+- **Visualisasi PC1 vs PC2 (`outputs/figures/room_pca_scatter.png`):**
+  ```bash
+  python scripts/plot_pca_room.py
+  ```
+- **Notebook Interaktif:** `notebooks/15_pca_room_features.ipynb`.
