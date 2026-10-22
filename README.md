@@ -78,6 +78,18 @@ Jalur Docker: `cd docker && docker compose up -d` (Mosquitto 1883, InfluxDB 8086
 
 Status uji: Mosquitto 2.0.20, InfluxDB 2.7.10 dan Grafana 11.3.0 diuji nyata secara native (penulisan data HO5, HO30/31 dan capstone, datasource sehat, 8 panel mengembalikan data). File `docker/docker-compose.yml` belum diuji karena tidak ada Docker di lingkungan pengembangan.
 
+## Skrip persis buku (nama file sama dengan buku)
+
+Skrip berikut disalin dari buku tanpa perubahan logika (indentasi 4 spasi dan satu baris yang terpotong halaman PDF disambung). Skrip bernama sama di `scripts/mqtt/` dan `scripts/uji_lingkungan.py` adalah versi berparameter untuk eksekusi terbatas.
+
+| File buku | Hands-on | Jalankan |
+|---|---|---|
+| `scripts/test_env.py` | 1 | `python scripts/test_env.py` |
+| `scripts/check_label_distribution.py` | 12 | `python scripts/check_label_distribution.py` |
+| `scripts/publish_csv_to_mqtt.py` | 13 | `python scripts/publish_csv_to_mqtt.py` (butuh broker) |
+| `scripts/subscribe_verify_mqtt.py` | 13 | `python scripts/subscribe_verify_mqtt.py` (butuh broker, Ctrl+C untuk berhenti) |
+| `scripts/compare_synthetic_vs_real.py` | 22 | `python scripts/compare_synthetic_vs_real.py` |
+
 ## Struktur Direktori
 
 ```text
