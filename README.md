@@ -358,3 +358,18 @@ iot-ml-book/
   ```
 - **Output:** `outputs/reports/room_kmeans_cluster.csv`, `outputs/reports/room_dbscan_cluster.csv`, `outputs/figures/room_kmeans_scatter.png`, `outputs/figures/room_dbscan_scatter.png`.
 - **Notebook Interaktif:** `notebooks/22_clustering_room.ipynb`.
+
+### Hands-on 22 (Bab 9): Deteksi Anomali Arus Listrik dengan Isolation Forest
+- **Generate dataset (ke `data/synthetic/current_sensor_anomaly.csv`):**
+  ```bash
+  python scripts/generate_current_anomaly_dataset.py
+  ```
+- **Jalankan Isolation Forest:**
+  ```bash
+  python scripts/isolation_forest_current.py
+  ```
+- **Evaluasi terhadap ground truth sintetis:**
+  ```bash
+  python scripts/evaluate_iforest_current.py
+  ```
+- **Notebook Interaktif:** `notebooks/23_isolation_forest_current.ipynb`.
