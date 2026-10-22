@@ -453,3 +453,14 @@ iot-ml-book/
   python scripts/export_keras_to_tflite.py
   ```
 - **Notebook Interaktif:** `notebooks/28_export_model.ipynb`.
+
+### Hands-on 28 (Bab 11): Simulasi Inferensi Lokal di Edge
+- **Inferensi scikit-learn (joblib):**
+  ```bash
+  python scripts/simulate_edge_inference_sklearn.py --max-rows 30 --delay 0.05
+  ```
+- **Inferensi TFLite (membutuhkan `pip install tensorflow-cpu`):**
+  ```bash
+  python scripts/simulate_edge_inference_tflite.py --max-rows 30 --delay 0.05
+  ```
+- **Notebook Interaktif:** `notebooks/29_edge_inference.ipynb`.
