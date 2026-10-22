@@ -585,3 +585,11 @@ iot-ml-book/
   ```
 - **Output:** `outputs/reports/capstone_monitoring.csv`, `outputs/reports/capstone_alerts.csv`.
 - **Notebook Interaktif:** `notebooks/39_proyek_akhir_capstone.ipynb`.
+
+### Hands-on 39 (Bab 15): Notifikasi Sederhana
+- **Listener notifikasi alert (butuh broker lokal dan pipeline Hands-on 38 berjalan):**
+  ```bash
+  python scripts/capstone_alert_listener.py --max-messages 5 --timeout 60
+  ```
+- **Output:** `outputs/reports/capstone_notifications.csv`.
+- **Notebook Interaktif:** `notebooks/40_notifikasi.ipynb`.
