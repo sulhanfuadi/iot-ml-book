@@ -331,3 +331,18 @@ iot-ml-book/
   python scripts/classification_rf_status.py
   ```
 - **Notebook Interaktif:** `notebooks/20_classification_status.ipynb`.
+
+### Hands-on 25: Perbandingan 3 Model dengan Metrik dan Kurva
+- **Bandingkan 3 klasifier (laporan ke `outputs/reports/model_comparison_status.csv`):**
+  ```bash
+  python scripts/compare_three_models_status.py
+  ```
+- **Visualisasi accuracy/F1 + kurva ROC (`outputs/figures/compare_*.png`):**
+  ```bash
+  python scripts/plot_model_comparison.py
+  ```
+- **Variasi regresi (`outputs/reports/model_comparison_regression.csv`):**
+  ```bash
+  python scripts/compare_three_regressors.py
+  ```
+- **Notebook Interaktif:** `notebooks/21_compare_models.ipynb`.
