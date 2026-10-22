@@ -81,3 +81,11 @@
 2026-10-22T07:45:01.228787 - VALID [kampus/lab1/room02/telemetry] {"device_id": "room01", "temperature_c": 26.88, "humidity_pct": 60.31, "co2_ppm": 577, "power_watt": 120.1, "timestamp": "2026-10-22T07:45:01"}
 2026-10-22T07:45:01.229609 - VALID [kampus/lab1/room01/telemetry] {"device_id": "room01", "temperature_c": 27.03, "humidity_pct": 47.61, "co2_ppm": 462, "power_watt": 134.48, "timestamp": "2026-10-22T07:45:01"}
 2026-10-22T07:45:01.229722 - VALID [kampus/lab1/room03/telemetry] {"device_id": "room01", "temperature_c": 26.95, "humidity_pct": 61.11, "co2_ppm": 556, "power_watt": 117.15, "timestamp": "2026-10-22T07:45:01"}
+2026-10-22T13:10:42.597055 - VALID [kampus/lab1/room01/telemetry] {"device_id": "room01", "temperature_c": 24.05, "humidity_pct": 59.57, "co2_ppm": 540, "power_watt": 132.91, "timestamp": "2026-10-22T13:10:42"}
+2026-10-22T13:10:43.597616 - TIDAK_VALID [kampus/lab1/room03/telemetry] {"device_id": "room03", "temperature_c": 95.0, "humidity_pct": 50.0, "co2_ppm": 700, "power_watt": 120.0, "timestamp": "2026-10-22T00:00:00"}
+2026-10-22T13:10:47.597108 - VALID [kampus/lab1/room01/telemetry] {"device_id": "room01", "temperature_c": 24.19, "humidity_pct": 48.86, "co2_ppm": 685, "power_watt": 132.52, "timestamp": "2026-10-22T13:10:47"}
+2026-10-22T13:10:52.597687 - VALID [kampus/lab1/room01/telemetry] {"device_id": "room01", "temperature_c": 25.04, "humidity_pct": 64.77, "co2_ppm": 600, "power_watt": 139.81, "timestamp": "2026-10-22T13:10:52"}
+2026-10-22T13:21:02.837957 - VALID [kampus/lab1/room01/telemetry] {"device_id": "room01", "temperature_c": 29.92, "humidity_pct": 56.45, "co2_ppm": 468, "power_watt": 151.64, "timestamp": "2026-10-22T13:21:02"}
+2026-10-22T13:21:03.833335 - TIDAK_VALID [kampus/lab1/room03/telemetry] {"device_id": "room03", "temperature_c": 95.0, "humidity_pct": 50.0, "co2_ppm": 700, "power_watt": 120.0, "timestamp": "2026-10-22T00:00:00"}
+2026-10-22T13:21:07.838507 - VALID [kampus/lab1/room01/telemetry] {"device_id": "room01", "temperature_c": 25.49, "humidity_pct": 56.21, "co2_ppm": 515, "power_watt": 102.57, "timestamp": "2026-10-22T13:21:07"}
+2026-10-22T13:21:12.838840 - VALID [kampus/lab1/room01/telemetry] {"device_id": "room01", "temperature_c": 28.86, "humidity_pct": 53.38, "co2_ppm": 868, "power_watt": 107.95, "timestamp": "2026-10-22T13:21:12"}

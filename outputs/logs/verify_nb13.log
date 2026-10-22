@@ -1,0 +1,23 @@
+[INFO] Terhubung ke broker.
+[INFO] Subscribe ke: iotlab/room01/telemetry
+[2026-01-01 00:00:00] T=21.18C, H=53.11%, CO2=350, P=110.65W, label=normal, anomaly=0
+[2026-01-01 00:10:00] T=21.6C, H=49.71%, CO2=350, P=116.53W, label=normal, anomaly=0
+[2026-01-01 00:20:00] T=20.75C, H=49.32%, CO2=350, P=95.69W, label=normal, anomaly=0
+[2026-01-01 00:30:00] T=22.09C, H=52.19%, CO2=399, P=119.58W, label=normal, anomaly=0
+[2026-01-01 00:40:00] T=21.81C, H=48.65%, CO2=350, P=112.78W, label=normal, anomaly=0
+[2026-01-01 00:50:00] T=21.47C, H=48.97%, CO2=350, P=95.08W, label=normal, anomaly=0
+[2026-01-01 01:00:00] T=21.49C, H=49.93%, CO2=350, P=101.58W, label=normal, anomaly=0
+[2026-01-01 01:10:00] T=21.78C, H=48.41%, CO2=363, P=105.62W, label=normal, anomaly=0
+[2026-01-01 01:20:00] T=21.6C, H=53.01%, CO2=375, P=101.41W, label=normal, anomaly=0
+[2026-01-01 01:30:00] T=21.68C, H=52.1%, CO2=354, P=103.82W, label=normal, anomaly=0
+[2026-01-01 01:40:00] T=22.12C, H=46.41%, CO2=428, P=125.01W, label=normal, anomaly=0
+[2026-01-01 01:50:00] T=22.1C, H=46.41%, CO2=379, P=109.77W, label=normal, anomaly=0
+[2026-01-01 02:00:00] T=21.94C, H=49.05%, CO2=350, P=117.21W, label=normal, anomaly=0
+[2026-01-01 02:10:00] T=22.01C, H=51.05%, CO2=374, P=127.77W, label=normal, anomaly=0
+[2026-01-01 02:20:00] T=22.2C, H=51.32%, CO2=369, P=115.54W, label=normal, anomaly=0
+[2026-01-01 02:30:00] T=21.98C, H=52.56%, CO2=350, P=109.74W, label=normal, anomaly=0
+[2026-01-01 02:40:00] T=22.16C, H=50.45%, CO2=366, P=118.52W, label=normal, anomaly=0
+[2026-01-01 02:50:00] T=22.64C, H=47.94%, CO2=380, P=107.3W, label=normal, anomaly=0
+[2026-01-01 03:00:00] T=22.47C, H=50.53%, CO2=407, P=113.12W, label=normal, anomaly=0
+[2026-01-01 03:10:00] T=22.09C, H=47.6%, CO2=376, P=116.08W, label=normal, anomaly=0
+[INFO] Total pesan terverifikasi: 20

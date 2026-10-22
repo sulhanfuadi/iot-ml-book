@@ -1,0 +1,12 @@
+Published: {"timestamp": "2026-10-22T13:27:17", "device_id": "room01", "temperature_c": 29.96, "humidity_pct": 63.09, "co2_ppm": 1350, "power_watt": 216.83}
+Published: {"timestamp": "2026-10-22T13:27:19", "device_id": "room01", "temperature_c": 28.11, "humidity_pct": 42.17, "co2_ppm": 555, "power_watt": 226.41}
+Published: {"timestamp": "2026-10-22T13:27:21", "device_id": "room01", "temperature_c": 27.91, "humidity_pct": 66.21, "co2_ppm": 909, "power_watt": 200.66}
+Published: {"timestamp": "2026-10-22T13:27:23", "device_id": "room01", "temperature_c": 28.01, "humidity_pct": 66.7, "co2_ppm": 552, "power_watt": 243.65}
+Published: {"timestamp": "2026-10-22T13:27:25", "device_id": "room01", "temperature_c": 28.36, "humidity_pct": 55.18, "co2_ppm": 982, "power_watt": 112.81}
+Published: {"timestamp": "2026-10-22T13:27:27", "device_id": "room01", "temperature_c": 32.78, "humidity_pct": 48.44, "co2_ppm": 992, "power_watt": 175.15}
+Published: {"timestamp": "2026-10-22T13:27:29", "device_id": "room01", "temperature_c": 25.33, "humidity_pct": 52.43, "co2_ppm": 1130, "power_watt": 158.61}
+Published: {"timestamp": "2026-10-22T13:27:31", "device_id": "room01", "temperature_c": 31.48, "humidity_pct": 63.57, "co2_ppm": 1419, "power_watt": 135.71}
+Published: {"timestamp": "2026-10-22T13:27:33", "device_id": "room01", "temperature_c": 25.81, "humidity_pct": 66.83, "co2_ppm": 628, "power_watt": 279.16}
+Published: {"timestamp": "2026-10-22T13:27:35", "device_id": "room01", "temperature_c": 32.36, "humidity_pct": 63.94, "co2_ppm": 1091, "power_watt": 178.28}
+Published: {"timestamp": "2026-10-22T13:27:37", "device_id": "room01", "temperature_c": 32.42, "humidity_pct": 55.23, "co2_ppm": 796, "power_watt": 98.7}
+Published: {"timestamp": "2026-10-22T13:27:39", "device_id": "room01", "temperature_c": 33.29, "humidity_pct": 54.37, "co2_ppm": 800, "power_watt": 142.52}

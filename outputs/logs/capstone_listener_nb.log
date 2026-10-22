@@ -1,0 +1,10 @@
+[INFO] Menunggu alert di topik: capstone/iotnode01/alert
+
+=== NOTIFIKASI ALERT ===
+Waktu   : 2026-10-22T13:29:58
+Device  : iotnode01
+Alasan  : iforest
+Daya    : 251.65 W
+Arus    : 6.95 A
+
+[SUKSES] 1 notifikasi disimpan ke outputs/reports/capstone_notifications.csv

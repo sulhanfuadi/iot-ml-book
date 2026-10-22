@@ -1,0 +1,12 @@
+Published: {'timestamp': '2026-10-22T13:28:55', 'device_id': 'room01', 'temperature_c': 31.47, 'humidity_pct': 63.35, 'co2_ppm': 1145}
+Published: {'timestamp': '2026-10-22T13:28:57', 'device_id': 'room01', 'temperature_c': 25.1, 'humidity_pct': 52.05, 'co2_ppm': 639}
+Published: {'timestamp': '2026-10-22T13:28:59', 'device_id': 'room01', 'temperature_c': 26.51, 'humidity_pct': 61.51, 'co2_ppm': 671}
+Published: {'timestamp': '2026-10-22T13:29:01', 'device_id': 'room01', 'temperature_c': 30.79, 'humidity_pct': 47.86, 'co2_ppm': 1165}
+Published: {'timestamp': '2026-10-22T13:29:03', 'device_id': 'room01', 'temperature_c': 25.74, 'humidity_pct': 61.95, 'co2_ppm': 729}
+Published: {'timestamp': '2026-10-22T13:29:05', 'device_id': 'room01', 'temperature_c': 31.18, 'humidity_pct': 50.71, 'co2_ppm': 623}
+Published: {'timestamp': '2026-10-22T13:29:07', 'device_id': 'room01', 'temperature_c': 27.76, 'humidity_pct': 64.41, 'co2_ppm': 608}
+Published: {'timestamp': '2026-10-22T13:29:09', 'device_id': 'room01', 'temperature_c': 31.74, 'humidity_pct': 62.55, 'co2_ppm': 894}
+Published: {'timestamp': '2026-10-22T13:29:11', 'device_id': 'room01', 'temperature_c': 24.98, 'humidity_pct': 70.9, 'co2_ppm': 1212}
+Published: {'timestamp': '2026-10-22T13:29:13', 'device_id': 'room01', 'temperature_c': 28.99, 'humidity_pct': 42.23, 'co2_ppm': 461}
+Published: {'timestamp': '2026-10-22T13:29:15', 'device_id': 'room01', 'temperature_c': 29.34, 'humidity_pct': 51.01, 'co2_ppm': 854}
+Published: {'timestamp': '2026-10-22T13:29:17', 'device_id': 'room01', 'temperature_c': 28.37, 'humidity_pct': 43.38, 'co2_ppm': 1319}

@@ -67,7 +67,7 @@ Nilai default sama dengan buku: org `iotlab`, bucket `sensor_data`, token `GANTI
 Broker MQTT: `python scripts/mqtt/run_broker.py` memakai Mosquitto bila terpasang (PATH, Homebrew, atau apt), dan otomatis jatuh ke amqtt bila tidak ada. Set `IOT_BROKER=amqtt` untuk memaksa amqtt.
 Pasang Mosquitto: `sudo apt install mosquitto mosquitto-clients` (Ubuntu) atau `brew install mosquitto` (macOS).
 
-Jalur native (Ubuntu/macOS): pasang InfluxDB 2.x dan Grafana, buat org `iotlab` dan bucket `sensor_data`, lalu jalankan skrip dengan `--influx --influx-token TOKEN`. Di Grafana, tambahkan datasource InfluxDB (Flux) lalu impor `dashboards/iot-ml-capstone.json` (8 panel).
+Jalur native (Ubuntu/macOS): pasang InfluxDB 2.x dan Grafana, buat org `iotlab` dan bucket `sensor_data`, lalu isi `INFLUX_TOKEN` di skrip (nilai bawaan buku: `GANTI_DENGAN_TOKEN_ANDA`); skrip subscriber buku menulis langsung ke InfluxDB. Di Grafana, tambahkan datasource InfluxDB (Flux) lalu impor `dashboards/iot-ml-capstone.json` (8 panel).
 
 Jalur Docker: `cd docker && docker compose up -d` (Mosquitto 1883, InfluxDB 8086, Grafana 3000, datasource dan dashboard diprovisi otomatis; ubah `INFLUX_TOKEN` di lingkungan bila perlu).
 
@@ -148,6 +148,8 @@ iot-ml-book/
 - **Notebook Interaktif:** `notebooks/01_baca_data_sensor.ipynb`.
 - **Hasil Olahan:** Disimpan ke `data/processed/room_sensor_clean.csv`.
 
+> Catatan: skrip MQTT dari buku dijalankan apa adanya (`while True` / `loop_forever`, tanpa flag). Hentikan dengan Ctrl+C. Notebook menjalankannya sebagai subprocess dan menghentikannya dari luar setelah beberapa detik (`python -u`, `TimeoutExpired`, keluaran parsial disimpan).
+
 ### Hands-on 3: Mengirim Data Sensor ke MQTT
 - **Broker:** Eclipse Mosquitto (port 1883).
 - **Topik MQTT:**
@@ -155,11 +157,11 @@ iot-ml-book/
   - Greenhouse: `kampus/greenhouse/zone1/telemetry`
 - **Jalankan Publisher Sensor Ruang:**
   ```bash
-  python scripts/mqtt/publish_sensor.py --count 5
+  python scripts/mqtt/publish_sensor.py
   ```
 - **Jalankan Publisher Sensor Greenhouse (Pertanian Presisi):**
   ```bash
-  python scripts/mqtt/publish_greenhouse.py --count 3
+  python scripts/mqtt/publish_greenhouse.py
   ```
 - **Notebook Interaktif:** `notebooks/02_kirim_data_mqtt.ipynb`.
 - **Log Pengiriman:** Tersimpan di `outputs/logs/publisher_room01.log` dan `outputs/logs/publisher_greenhouse.log`.
@@ -172,11 +174,11 @@ iot-ml-book/
   (Di lab/produksi, buku memakai Eclipse Mosquitto: `mosquitto -v`.)
 - **Subscriber sederhana (satu topik `kampus/lab1/room01/telemetry`):**
   ```bash
-  python scripts/mqtt/subscribe_sensor.py --max-messages 3 --timeout 25
+  python scripts/mqtt/subscribe_sensor.py
   ```
 - **Subscriber wildcard multi-ruangan (`kampus/lab1/+/telemetry`):**
   ```bash
-  python scripts/mqtt/subscribe_all_rooms.py --max-messages 6 --timeout 25
+  python scripts/mqtt/subscribe_all_rooms.py
   ```
 - **Subscriber dengan validasi payload (rentang suhu/kelembaban/CO2):**
   ```bash
@@ -188,20 +190,20 @@ iot-ml-book/
 ### Hands-on 5: Simpan Data MQTT ke CSV & SQLite
 - **Simpan telemetri ke CSV (`data/raw/mqtt_room01.csv`):**
   ```bash
-  python scripts/mqtt/save_to_csv.py --max-messages 5 --timeout 25
+  python scripts/mqtt/save_to_csv.py
   ```
 - **Simpan telemetri ke SQLite (`data/raw/iot_sensor.db`):**
   ```bash
-  python scripts/mqtt/save_to_sqlite.py --max-messages 5 --timeout 25
+  python scripts/mqtt/save_to_sqlite.py
   ```
 - **Pola gabungan multi-storage (CSV + SQLite sekaligus):**
   ```bash
-  python scripts/mqtt/save_to_csv_sqlite.py --max-messages 5 --timeout 25
+  python scripts/mqtt/save_to_csv_sqlite.py
   ```
 - **(Opsional, butuh server) Simpan ke InfluxDB:**
   ```bash
   pip install influxdb-client
-  python scripts/mqtt/save_to_influxdb.py --influx-url http://localhost:8086 --influx-token <TOKEN>
+  python scripts/mqtt/save_to_influxdb.py
   ```
   Memerlukan server InfluxDB (di buku: Docker `influxdb:2.7` pada port 8086).
 - **Notebook Interaktif:** `notebooks/04_simpan_data_storage.ipynb`.
@@ -539,29 +541,29 @@ Skrip ini ada di buku antara Hands-on 8 dan Hands-on 9.
 ### Hands-on 28 (Bab 11): Simulasi Inferensi Lokal di Edge
 - **Inferensi scikit-learn (joblib):**
   ```bash
-  python scripts/simulate_edge_inference_sklearn.py --max-rows 30 --delay 0.05
+  python scripts/simulate_edge_inference_sklearn.py
   ```
 - **Inferensi TFLite (membutuhkan `pip install tensorflow-cpu`):**
   ```bash
-  python scripts/simulate_edge_inference_tflite.py --max-rows 30 --delay 0.05
+  python scripts/simulate_edge_inference_tflite.py
   ```
 - **Notebook Interaktif:** `notebooks/29_edge_inference.ipynb`.
 
 ### Hands-on 29 (Bab 11): Mini Proyek Klasifikasi Edge (Raspberry Pi / Emulator)
 - **Versi tanpa MQTT (log ke `outputs/reports/edge_room_predictions.csv`):**
   ```bash
-  python scripts/edge_room_classifier_project.py --steps 30 --delay 0.05
+  python scripts/edge_room_classifier_project.py
   ```
 - **Versi dengan MQTT (butuh broker lokal, misal `python scripts/mqtt/run_broker.py`):**
   ```bash
-  python scripts/edge_room_classifier_mqtt.py --steps 20 --delay 0.05
+  python scripts/edge_room_classifier_mqtt.py
   ```
 - **Notebook Interaktif:** `notebooks/30_mini_proyek_edge.ipynb`.
 
 ### Hands-on 30 (Bab 12): Pipeline Lengkap MQTT -> Prediksi -> Storage -> Dashboard
 - **Simulator sensor (butuh broker lokal, misal `python scripts/mqtt/run_broker.py`):**
   ```bash
-  python scripts/publisher_room_simulator.py --count 20 --interval 1
+  python scripts/publisher_room_simulator.py
   ```
 - **Subscriber pipeline (preprocessing + prediksi + storage CSV; tambahkan `--influx --influx-token <token>` untuk InfluxDB sesuai buku):**
   ```bash
@@ -578,9 +580,9 @@ Skrip ini ada di buku antara Hands-on 8 dan Hands-on 9.
   ```
 - **Pantau topik alert di terminal lain:**
   ```bash
-  python scripts/mqtt/subscribe_sensor.py --topic "iotlab/room01/alert"
+  python scripts/mqtt/subscribe_sensor.py
   ```
-- **Aturan alert:** model memprediksi FAULT, atau suhu > 32 C dan CO2 > 1200 ppm bersamaan. Tambahkan `--influx --influx-token <token>` untuk storage InfluxDB sesuai buku.
+- **Aturan alert:** model memprediksi FAULT, atau suhu > 32 C dan CO2 > 1200 ppm bersamaan. Skrip ini menulis ke InfluxDB (org iotlab, bucket sensor_data, token GANTI_DENGAN_TOKEN_ANDA) persis seperti buku; ubah konstanta INFLUX_TOKEN di dalam skrip bila token Anda berbeda. Untuk melihat topik alert, ubah TOPIC di subscribe_sensor.py menjadi iotlab/room01/alert.
 - **Versi sederhana berbasis skor anomali (Pendekatan B buku: skor >= 0.7 memicu alert):**
   ```bash
   python scripts/alert_score_demo.py
@@ -618,11 +620,11 @@ Skrip ini ada di buku antara Hands-on 8 dan Hands-on 9.
   ```
 - **Publisher simulator (butuh broker lokal):**
   ```bash
-  python scripts/case_a_room_publisher.py --count 20 --interval 1
+  python scripts/case_a_room_publisher.py
   ```
 - **Subscriber + klasifikasi (storage CSV; `--influx` untuk InfluxDB sesuai buku):**
   ```bash
-  python scripts/case_a_room_subscriber.py --max-messages 10 --timeout 60
+  python scripts/case_a_room_subscriber.py
   ```
 - **Notebook Interaktif:** `notebooks/36_studi_kasus_a.ipynb`.
 
@@ -659,15 +661,15 @@ Skrip ini ada di buku antara Hands-on 8 dan Hands-on 9.
   ```
 - **Publisher simulator (butuh broker lokal):**
   ```bash
-  python scripts/publishers/capstone_publisher.py --count 20 --interval 1
+  python scripts/publishers/capstone_publisher.py
   ```
 - **Subscriber (validasi + threshold + Isolation Forest, storage CSV; `--influx` untuk InfluxDB sesuai buku):**
   ```bash
-  python scripts/subscribers/capstone_subscriber.py --max-messages 10 --timeout 60
+  python scripts/subscribers/capstone_subscriber.py
   ```
 - **Subscriber dengan alert (alert ke `capstone/iotnode01/alert`):**
   ```bash
-  python scripts/subscribers/capstone_subscriber_with_alert.py --max-messages 15 --timeout 60
+  python scripts/subscribers/capstone_subscriber_with_alert.py
   ```
 - **Output:** `outputs/reports/capstone_monitoring.csv`, `outputs/reports/capstone_alerts.csv`.
 - **Notebook Interaktif:** `notebooks/39_proyek_akhir_capstone.ipynb`.
@@ -683,7 +685,7 @@ Skrip ini ada di buku antara Hands-on 8 dan Hands-on 9.
 ### Hands-on 40 (Bab 15): Uji Beban dan Skenario Pengembangan Lanjut
 - **Uji volume (default 1000 pesan, jeda 0.05 detik):**
   ```bash
-  python scripts/publishers/capstone_stress_publisher.py --count 1000 --interval 0.05
+  python scripts/publishers/capstone_stress_publisher.py
   ```
 - **Uji payload rusak (3 payload buruk):**
   ```bash
@@ -691,7 +693,7 @@ Skrip ini ada di buku antara Hands-on 8 dan Hands-on 9.
   ```
 - **Uji drift buatan (default 500 pesan):**
   ```bash
-  python scripts/publishers/capstone_drift_publisher.py --count 500 --interval 0.1
+  python scripts/publishers/capstone_drift_publisher.py
   ```
 - Jalankan bersama `scripts/subscribers/capstone_subscriber.py` dan amati checklist uji beban (stabilitas broker/subscriber, error handling, storage, kebisingan alert, tanda drift).
 - **Notebook Interaktif:** `notebooks/41_stress_test.ipynb`.
