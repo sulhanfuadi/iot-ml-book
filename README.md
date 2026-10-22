@@ -516,3 +516,11 @@ iot-ml-book/
   ```
 - **Output:** `outputs/reports/feature_importance_room_model.csv`, `outputs/figures/feature_importance_room_model.png`.
 - **Notebook Interaktif:** `notebooks/34_feature_importance.ipynb`.
+
+### Hands-on 34 (Bab 13): Checklist Operasional Sistem IoT-ML
+- **Generate template checklist:**
+  ```bash
+  python scripts/generate_operational_checklist.py
+  ```
+- **Output:** `outputs/reports/iot_ml_operational_checklist.md`.
+- **Notebook Interaktif:** `notebooks/35_operational_checklist.ipynb`.
