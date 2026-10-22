@@ -567,7 +567,7 @@ iot-ml-book/
 - **Notebook Interaktif:** `notebooks/38_studi_kasus_c.ipynb`.
 
 ### Hands-on 38 (Bab 15): Proyek Akhir End-to-End (Capstone)
-- **Latih baseline Isolation Forest (ke `outputs/models/capstone_iforest.joblib`):**
+- **Latih baseline Isolation Forest (ke `outputs/models/capstone_iforest.joblib`). Baseline dilatih pada rentang operasi normal deployment (rentang payload normal publisher) sesuai prinsip Bab 13; formula model persis buku (n_estimators=200, contamination=0.05, random_state=42):**
   ```bash
   python scripts/inference/train_capstone_iforest.py
   ```
