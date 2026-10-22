@@ -373,3 +373,18 @@ iot-ml-book/
   python scripts/evaluate_iforest_current.py
   ```
 - **Notebook Interaktif:** `notebooks/23_isolation_forest_current.ipynb`.
+
+### Hands-on 23 (Bab 9): Threshold Statis vs Isolation Forest
+- **Deteksi threshold statis:**
+  ```bash
+  python scripts/current_threshold_detection.py
+  ```
+- **Bandingkan metrik kedua metode:**
+  ```bash
+  python scripts/compare_threshold_vs_iforest.py
+  ```
+- **Visualisasi F1 dan recall:**
+  ```bash
+  python scripts/plot_threshold_vs_iforest.py
+  ```
+- **Notebook Interaktif:** `notebooks/24_threshold_vs_iforest.ipynb`.
