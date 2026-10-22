@@ -73,6 +73,13 @@ Jalur Docker: `cd docker && docker compose up -d` (Mosquitto 1883, InfluxDB 8086
 
 Status uji: Mosquitto 2.0.20, InfluxDB 2.7.10 dan Grafana 11.3.0 diuji nyata secara native (penulisan data HO5, HO30/31 dan capstone, datasource sehat, 8 panel mengembalikan data). File `docker/docker-compose.yml` belum diuji karena tidak ada Docker di lingkungan pengembangan.
 
+## Kebutuhan perangkat keras Raspberry Pi
+
+Tidak ada Hands-on di buku ini yang memerlukan perangkat keras Raspberry Pi (GPIO, sensor fisik atau kamera). Buku tidak memuat kode GPIO, kamera, DHT atau I2C/SPI; semua data berasal dari CSV dan simulator MQTT, sehingga seluruh Hands-on berjalan di laptop atau Mac.
+
+Hands-on yang menyebut Raspberry Pi hanya sebagai target deployment opsional:
+- Hands-on 28 (ekspor model, bagian deployment ke Raspberry Pi) dan Hands-on 29 ("Mini Proyek Klasifikasi Sederhana di Raspberry Pi / Emulator"): di buku dapat dijalankan di emulator/laptop. Menjalankannya di Raspberry Pi sungguhan bersifat opsional dan belum diuji di sini (lihat `prompt_test_lokal.md`, Tes B).
+
 ## Penyimpangan yang disengaja dari buku
 
 Semua skrip dengan blok "Buat file" di buku memakai kode buku apa adanya (diekstrak dari tata letak PDF). Pengecualian yang didokumentasikan:
