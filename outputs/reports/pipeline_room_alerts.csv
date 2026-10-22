@@ -1,2 +1,3 @@
 timestamp,device_id,pred_status,alert_reason,temperature_c,humidity_pct,co2_ppm,power_watt
-2026-10-22T08:09:16,room01,fault,Model memprediksi FAULT,24.65,42.28,1165,271.83
+2026-10-22T12:04:20,room01,fault,Model memprediksi FAULT,25.46,52.42,1230,259.06
+2026-10-22T12:04:21,room01,fault,Model memprediksi FAULT,31.77,58.91,1407,142.85
