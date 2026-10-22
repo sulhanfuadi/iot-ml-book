@@ -500,3 +500,11 @@ iot-ml-book/
   ```
 - **Aturan alert:** model memprediksi FAULT, atau suhu > 32 C dan CO2 > 1200 ppm bersamaan. Tambahkan `--influx --influx-token <token>` untuk storage InfluxDB sesuai buku.
 - **Notebook Interaktif:** `notebooks/32_pipeline_alert.ipynb`.
+
+### Hands-on 32 (Bab 13): Monitoring Data Drift
+- **Bandingkan distribusi baseline vs current + indikator drift:**
+  ```bash
+  python scripts/monitor_data_distribution.py
+  ```
+- **Output:** `outputs/reports/data_distribution_monitor.csv`, `outputs/figures/dist_compare_temperature_c.png`, `outputs/figures/dist_compare_humidity_pct.png`.
+- **Notebook Interaktif:** `notebooks/33_data_drift.ipynb`.
