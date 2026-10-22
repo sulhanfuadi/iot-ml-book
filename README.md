@@ -222,3 +222,14 @@ iot-ml-book/
   python scripts/plot_vibration_fault.py
   ```
 - **Notebook Interaktif:** `notebooks/10_generate_vibration_fault.ipynb`.
+
+### Hands-on 12: Dataset Sintetis untuk Klasifikasi dan Anomaly Detection
+- **Generate dataset berlabel (`data/synthetic/room_classification_dataset.csv`):**
+  ```bash
+  python scripts/generate_room_classification_dataset.py
+  ```
+- **Visualisasi sebaran label (`outputs/figures/room_classification_scatter.png`):**
+  ```bash
+  python scripts/plot_classification_dataset.py
+  ```
+- **Notebook Interaktif:** `notebooks/11_generate_classification_dataset.ipynb`.
