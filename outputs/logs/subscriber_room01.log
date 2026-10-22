@@ -19,3 +19,5 @@
 2026-10-22T07:44:52.721620 - Pesan valid dari kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 27.03, "humidity_pct": 57.28, "co2_ppm": 785, "power_watt": 129.73, "timestamp": "2026-10-22T07:44:52"}
 2026-10-22T07:44:53.221803 - Pesan valid dari kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 29.71, "humidity_pct": 50.51, "co2_ppm": 849, "power_watt": 120.34, "timestamp": "2026-10-22T07:44:53"}
 2026-10-22T07:44:53.722145 - Pesan valid dari kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 24.09, "humidity_pct": 51.25, "co2_ppm": 520, "power_watt": 146.73, "timestamp": "2026-10-22T07:44:53"}
+2026-10-22T10:52:20.974656 - Subscribe ke topik: capstone/iotnode01/alert
+2026-10-22T10:52:23.148474 - Pesan valid dari capstone/iotnode01/alert: {"timestamp": "2026-10-22T10:52:23", "device_id": "iotnode01", "alert_reason": "isolation_forest", "temperature_c": 33.76, "humidity_pct": 41.63, "power_watt": 234.52, "current_amp": 5.24}
