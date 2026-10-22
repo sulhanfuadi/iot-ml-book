@@ -65,6 +65,8 @@ python scripts/book_figures.py --only rmsstd
 
 ## Mosquitto, InfluxDB dan Grafana
 
+Versi paho-mqtt dipasang 1.6.x (`paho-mqtt>=1.6.1,<2.0`) agar kode buku `mqtt.Client(client_id=...)` dengan `on_connect(client, userdata, flags, reason_code, properties=None)` berjalan apa adanya. Jangan pakai paho-mqtt 2.x untuk repo ini.
+
 Nilai default sama dengan buku: org `iotlab`, bucket `sensor_data`, token `GANTI_DENGAN_TOKEN_ANDA`.
 
 Broker MQTT: `python scripts/mqtt/run_broker.py` memakai Mosquitto bila terpasang (PATH, Homebrew, atau apt), dan otomatis jatuh ke amqtt bila tidak ada. Set `IOT_BROKER=amqtt` untuk memaksa amqtt.

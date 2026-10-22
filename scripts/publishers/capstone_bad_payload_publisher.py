@@ -17,7 +17,7 @@ TOPIC = "capstone/iotnode01/telemetry"
 
 
 def main():
-  client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2, client_id="capstone-bad-publisher")
+  client = mqtt.Client(client_id="capstone-bad-publisher")
   client.connect(BROKER, 1883, 60)
   client.loop_start()
 

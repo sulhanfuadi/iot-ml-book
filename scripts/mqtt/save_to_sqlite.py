@@ -23,10 +23,7 @@ DB_PATH = Path("data/raw/iot_sensor.db")
 
 
 def create_mqtt_client(client_id):
-  try:
-    return mqtt.Client(mqtt.CallbackAPIVersion.VERSION2, client_id=client_id)
-  except AttributeError:
-    return mqtt.Client(client_id=client_id)
+  return mqtt.Client(client_id=client_id)
 
 
 def init_db():

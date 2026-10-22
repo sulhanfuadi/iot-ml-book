@@ -21,7 +21,7 @@ narwhals==2.27.1
 nest-asyncio2==1.7.4
 numpy==2.5.4
 packaging==26.3
-paho-mqtt==2.1.0
+paho-mqtt==1.6.1
 pandas==3.0.6
 parso==0.8.7
 pexpect==4.9.0

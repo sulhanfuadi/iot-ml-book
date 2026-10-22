@@ -31,7 +31,7 @@ def main():
 
   rng = random.Random()
 
-  client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2, client_id="publisher-room-sim")
+  client = mqtt.Client(client_id="publisher-room-sim")
   client.connect(args.host, args.port, keepalive=60)
   client.loop_start()
 
