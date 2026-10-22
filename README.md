@@ -593,3 +593,19 @@ iot-ml-book/
   ```
 - **Output:** `outputs/reports/capstone_notifications.csv`.
 - **Notebook Interaktif:** `notebooks/40_notifikasi.ipynb`.
+
+### Hands-on 40 (Bab 15): Uji Beban dan Skenario Pengembangan Lanjut
+- **Uji volume (default 1000 pesan, jeda 0.05 detik):**
+  ```bash
+  python scripts/publishers/capstone_stress_publisher.py --count 1000 --interval 0.05
+  ```
+- **Uji payload rusak (3 payload buruk):**
+  ```bash
+  python scripts/publishers/capstone_bad_payload_publisher.py
+  ```
+- **Uji drift buatan (default 500 pesan):**
+  ```bash
+  python scripts/publishers/capstone_drift_publisher.py --count 500 --interval 0.1
+  ```
+- Jalankan bersama `scripts/subscribers/capstone_subscriber.py` dan amati checklist uji beban (stabilitas broker/subscriber, error handling, storage, kebisingan alert, tanda drift).
+- **Notebook Interaktif:** `notebooks/41_stress_test.ipynb`.
