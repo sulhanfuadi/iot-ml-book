@@ -1,0 +1,3 @@
+method,accuracy,precision,recall,f1
+Threshold,1.0,1.0,1.0,1.0
+IsolationForest,1.0,1.0,1.0,1.0
