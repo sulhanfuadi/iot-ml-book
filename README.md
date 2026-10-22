@@ -196,3 +196,18 @@ iot-ml-book/
   python scripts/plot_room_30days.py
   ```
 - **Notebook Interaktif:** `notebooks/08_generate_room_30days.ipynb`.
+
+### Hands-on 10: Generator Data Konsumsi Energi Berbasis Jam Kerja
+- **Generate dataset energi (`data/synthetic/energy_30days.csv`):**
+  ```bash
+  python scripts/generate_energy_workhours.py
+  ```
+- **Label hemat/boros (`data/synthetic/energy_30days_labeled.csv`):**
+  ```bash
+  python scripts/label_energy_efficiency.py
+  ```
+- **Visualisasi (`outputs/figures/energy_*.png`):**
+  ```bash
+  python scripts/plot_energy_workhours.py
+  ```
+- **Notebook Interaktif:** `notebooks/09_generate_energy.ipynb`.
