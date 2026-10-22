@@ -388,3 +388,22 @@ iot-ml-book/
   python scripts/plot_threshold_vs_iforest.py
   ```
 - **Notebook Interaktif:** `notebooks/24_threshold_vs_iforest.ipynb`.
+
+### Hands-on 24 (Bab 10): Forecasting Suhu Ruang
+- **Siapkan dataset (ke `data/processed/forecast_room/`):**
+  ```bash
+  python scripts/prepare_room_forecast_dataset.py
+  ```
+- **Baseline last value & moving average:**
+  ```bash
+  python scripts/baseline_room_forecast.py
+  ```
+- **Linear Regression berbasis lag:**
+  ```bash
+  python scripts/linear_regression_room_forecast.py
+  ```
+- **Visualisasi perbandingan:**
+  ```bash
+  python scripts/plot_room_forecast_comparison.py
+  ```
+- **Notebook Interaktif:** `notebooks/25_forecasting_suhu.ipynb`.
