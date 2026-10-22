@@ -233,3 +233,18 @@ iot-ml-book/
   python scripts/plot_classification_dataset.py
   ```
 - **Notebook Interaktif:** `notebooks/11_generate_classification_dataset.ipynb`.
+
+### Hands-on 13: Ekspor Dataset ke CSV dan Publish ke MQTT Simulator
+- **Publish dataset CSV ke topik `iotlab/room01/telemetry`:**
+  ```bash
+  python scripts/mqtt/publish_csv_to_mqtt.py --limit 20 --interval 0.05
+  ```
+- **Subscriber verifikasi payload:**
+  ```bash
+  python scripts/mqtt/subscribe_verify_mqtt.py --max-messages 20 --timeout 60
+  ```
+- **Publish multi-topic (warning/fault juga ke `iotlab/room01/alert`):**
+  ```bash
+  python scripts/mqtt/publish_multi_topic.py --limit 400 --interval 0.01
+  ```
+- **Notebook Interaktif:** `notebooks/12_publish_csv_mqtt.ipynb`.
