@@ -565,3 +565,23 @@ iot-ml-book/
   python scripts/case_c_energy_forecast_alert.py
   ```
 - **Notebook Interaktif:** `notebooks/38_studi_kasus_c.ipynb`.
+
+### Hands-on 38 (Bab 15): Proyek Akhir End-to-End (Capstone)
+- **Latih baseline Isolation Forest (ke `outputs/models/capstone_iforest.joblib`):**
+  ```bash
+  python scripts/inference/train_capstone_iforest.py
+  ```
+- **Publisher simulator (butuh broker lokal):**
+  ```bash
+  python scripts/publishers/capstone_publisher.py --count 20 --interval 1
+  ```
+- **Subscriber (validasi + threshold + Isolation Forest, storage CSV; `--influx` untuk InfluxDB sesuai buku):**
+  ```bash
+  python scripts/subscribers/capstone_subscriber.py --max-messages 10 --timeout 60
+  ```
+- **Subscriber dengan alert (alert ke `capstone/iotnode01/alert`):**
+  ```bash
+  python scripts/subscribers/capstone_subscriber_with_alert.py --max-messages 15 --timeout 60
+  ```
+- **Output:** `outputs/reports/capstone_monitoring.csv`, `outputs/reports/capstone_alerts.csv`.
+- **Notebook Interaktif:** `notebooks/39_proyek_akhir_capstone.ipynb`.
