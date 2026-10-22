@@ -20,7 +20,7 @@ PORT = 1883
 TOPIC = "capstone/iotnode01/telemetry"
 TOPIC_ALERT = "capstone/iotnode01/alert"
 
-MODEL_PATH = Path("outputs/models/capstone_iforest.joblib")
+MODEL_PATH = Path("data/models/capstone_iforest.joblib")
 CSV_PATH = Path("outputs/reports/capstone_monitoring.csv")
 ALERT_CSV_PATH = Path("outputs/reports/capstone_alerts.csv")
 

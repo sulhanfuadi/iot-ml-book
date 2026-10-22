@@ -23,7 +23,7 @@ BROKER_HOST = "localhost"
 BROKER_PORT = 1883
 TOPIC = "iotlab/room01/telemetry"
 
-MODEL_PATH = Path("outputs/models/room_status_rf.joblib")
+MODEL_PATH = Path("models/room_status_rf.joblib")
 CSV_PATH = Path("outputs/reports/pipeline_room_predictions.csv")
 
 INFLUX_URL = "http://localhost:8086"

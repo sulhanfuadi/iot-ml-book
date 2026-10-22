@@ -15,7 +15,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import pandas as pd
 
-MODEL_PATH = Path("outputs/models/room_status_rf.joblib")
+MODEL_PATH = Path("models/room_status_rf.joblib")
 X_TRAIN_PATH = Path("data/processed/classification_status/X_train.csv")
 OUTPUT_DIR = Path("outputs")
 

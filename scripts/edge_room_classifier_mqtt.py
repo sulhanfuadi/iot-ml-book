@@ -16,7 +16,7 @@ import joblib
 import pandas as pd
 import paho.mqtt.client as mqtt
 
-MODEL_PATH = Path("outputs/models/room_status_rf.joblib")
+MODEL_PATH = Path("models/room_status_rf.joblib")
 TOPIC = "iotlab/room01/prediction"
 
 

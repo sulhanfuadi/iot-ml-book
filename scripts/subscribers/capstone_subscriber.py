@@ -21,7 +21,7 @@ BROKER = "localhost"
 PORT = 1883
 TOPIC = "capstone/iotnode01/telemetry"
 
-MODEL_PATH = Path("outputs/models/capstone_iforest.joblib")
+MODEL_PATH = Path("data/models/capstone_iforest.joblib")
 CSV_PATH = Path("outputs/reports/capstone_monitoring.csv")
 
 INFLUX_URL = "http://localhost:8086"

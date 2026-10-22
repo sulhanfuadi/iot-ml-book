@@ -17,7 +17,7 @@ import paho.mqtt.client as mqtt
 
 BROKER = "localhost"
 TOPIC = "casea/room01/telemetry"
-MODEL_PATH = Path("outputs/models/case_a_room_rf.joblib")
+MODEL_PATH = Path("models/case_a_room_rf.joblib")
 CSV_PATH = Path("outputs/reports/case_a_room_predictions.csv")
 
 INFLUX_URL = "http://localhost:8086"

@@ -501,11 +501,11 @@ iot-ml-book/
 - **Notebook Interaktif:** `notebooks/27_benchmark_forecasting.ipynb`.
 
 ### Hands-on 27 (Bab 11): Ekspor Model ke Format Ringan
-- **Jalur A - scikit-learn ke joblib (`outputs/models/room_status_rf.joblib`):**
+- **Jalur A - scikit-learn ke joblib (`models/room_status_rf.joblib`):**
   ```bash
   python scripts/export_sklearn_model.py
   ```
-- **Jalur B - Keras ke TFLite (`outputs/models/room_binary.keras` + `.tflite`; membutuhkan `pip install tensorflow-cpu`):**
+- **Jalur B - Keras ke TFLite (`models/room_binary.keras` + `.tflite`; membutuhkan `pip install tensorflow-cpu`):**
   ```bash
   python scripts/export_keras_to_tflite.py
   ```
@@ -587,7 +587,7 @@ iot-ml-book/
 - **Notebook Interaktif:** `notebooks/35_operational_checklist.ipynb`.
 
 ### Hands-on 35: Studi Kasus A - Smart Room Monitoring
-- **Latih model kenyamanan (ke `outputs/models/case_a_room_rf.joblib`):**
+- **Latih model kenyamanan (ke `models/case_a_room_rf.joblib`):**
   ```bash
   python scripts/case_a_train_room_model.py
   ```
@@ -628,7 +628,7 @@ iot-ml-book/
 - **Notebook Interaktif:** `notebooks/38_studi_kasus_c.ipynb`.
 
 ### Hands-on 38 (Bab 15): Proyek Akhir End-to-End (Capstone)
-- **Latih baseline Isolation Forest (ke `outputs/models/capstone_iforest.joblib`). Baseline dilatih pada rentang operasi normal deployment (rentang payload normal publisher) sesuai prinsip Bab 13; formula model persis buku (n_estimators=200, contamination=0.05, random_state=42):**
+- **Latih baseline Isolation Forest (ke `data/models/capstone_iforest.joblib`). Baseline dilatih pada rentang operasi normal deployment (rentang payload normal publisher) sesuai prinsip Bab 13; formula model persis buku (n_estimators=200, contamination=0.05, random_state=42):**
   ```bash
   python scripts/inference/train_capstone_iforest.py
   ```

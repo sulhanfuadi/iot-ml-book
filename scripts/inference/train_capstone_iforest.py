@@ -11,7 +11,7 @@ hampir setengah traffic normal sebagai anomali ("notifikasi harus cukup
 berguna, bukan terlalu berisik" - Bab 15). Formula model tetap persis buku:
 IsolationForest(n_estimators=200, contamination=0.05, random_state=42).
 
-Output: outputs/models/capstone_iforest.joblib
+Output: data/models/capstone_iforest.joblib
 """
 
 from pathlib import Path
@@ -21,7 +21,7 @@ import numpy as np
 import pandas as pd
 from sklearn.ensemble import IsolationForest
 
-MODEL_DIR = Path("outputs/models")
+MODEL_DIR = Path("data/models")
 
 FEATURE_COLS = ["temperature_c", "humidity_pct", "power_watt", "current_amp"]
 

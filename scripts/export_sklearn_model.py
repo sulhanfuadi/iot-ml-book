@@ -4,7 +4,7 @@ Buku Referensi: IoT Terintegrasi dengan Machine Learning & Data Analytics (Onno 
 
 Random Forest dangkal untuk klasifikasi status ruangan, disimpan dengan joblib
 agar siap dipakai di Raspberry Pi / mini PC dengan Python biasa.
-Output: outputs/models/room_status_rf.joblib
+Output: models/room_status_rf.joblib
 """
 
 from pathlib import Path
@@ -15,7 +15,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 
 DATA_DIR = Path("data/processed/classification_status")
-MODEL_DIR = Path("outputs/models")
+MODEL_DIR = Path("models")
 
 
 def main():

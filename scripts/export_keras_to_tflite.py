@@ -4,7 +4,7 @@ Buku Referensi: IoT Terintegrasi dengan Machine Learning & Data Analytics (Onno 
 
 MLP kecil untuk klasifikasi biner ruangan, disimpan sebagai .keras lalu
 dikonversi ke .tflite untuk inferensi edge.
-Output: outputs/models/room_binary.keras, outputs/models/room_binary.tflite
+Output: models/room_binary.keras, models/room_binary.tflite
 """
 
 import os
@@ -19,7 +19,7 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.utils import set_random_seed
 
 DATA_DIR = Path("data/processed/classification_room")
-MODEL_DIR = Path("outputs/models")
+MODEL_DIR = Path("models")
 
 
 def main():
