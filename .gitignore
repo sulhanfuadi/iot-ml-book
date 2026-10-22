@@ -14,7 +14,9 @@ data/raw/*
 !data/raw/*.csv
 !data/raw/.gitkeep
 data/processed/*
+!data/processed/*/
 !data/processed/*.csv
+!data/processed/**/*.csv
 !data/processed/.gitkeep
 outputs/figures/*
 !outputs/figures/*.png
