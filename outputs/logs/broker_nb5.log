@@ -1,0 +1,19 @@
+[INFO] Broker MQTT Mosquitto aktif di 127.0.0.1:1883
+[INFO] Tekan Ctrl+C untuk menghentikan broker.
+1792650079: mosquitto version 2.0.20 starting
+1792650079: Config loaded from /tmp/iot_ml_book_mosquitto.conf.
+1792650079: Opening ipv4 listen socket on port 1883.
+1792650079: mosquitto version 2.0.20 running
+1792650082: New connection from 127.0.0.1:58537 on port 1883.
+1792650082: New client connected from 127.0.0.1:58537 as publisher-room01 (p2, c1, k60).
+1792650083: New connection from 127.0.0.1:52135 on port 1883.
+1792650083: New client connected from 127.0.0.1:52135 as auto-09322920-BB7F-8C09-89F0-B2EB5DD22628 (p2, c1, k60).
+1792650101: Client auto-09322920-BB7F-8C09-89F0-B2EB5DD22628 closed its connection.
+1792650101: New connection from 127.0.0.1:53363 on port 1883.
+1792650101: New client connected from 127.0.0.1:53363 as auto-B679B388-B976-A4E1-31D9-17BBF268FF76 (p2, c1, k60).
+1792650119: Client auto-B679B388-B976-A4E1-31D9-17BBF268FF76 closed its connection.
+1792650119: New connection from 127.0.0.1:36311 on port 1883.
+1792650119: New client connected from 127.0.0.1:36311 as auto-EB4ECA9C-018C-0C28-4AD3-D3928796E605 (p2, c1, k60).
+1792650137: Client auto-EB4ECA9C-018C-0C28-4AD3-D3928796E605 closed its connection.
+1792650137: Client publisher-room01 closed its connection.
+1792650137: mosquitto version 2.0.20 terminating

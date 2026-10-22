@@ -1,0 +1,8 @@
+[INFO] Terhubung ke broker.
+[INFO] Subscribe dengan validasi ke: kampus/lab1/+/telemetry
+[VALID] Data valid: {'device_id': 'room01', 'temperature_c': 29.92, 'humidity_pct': 56.45, 'co2_ppm': 468, 'power_watt': 151.64, 'timestamp': '2026-10-22T13:21:02'}
+[PERINGATAN] Data tidak valid: {'device_id': 'room03', 'temperature_c': 95.0, 'humidity_pct': 50.0, 'co2_ppm': 700, 'power_watt': 120.0, 'timestamp': '2026-10-22T00:00:00'}
+[ERROR] Error parsing payload: Expecting value: line 1 column 1 (char 0)
+[VALID] Data valid: {'device_id': 'room01', 'temperature_c': 25.49, 'humidity_pct': 56.21, 'co2_ppm': 515, 'power_watt': 102.57, 'timestamp': '2026-10-22T13:21:07'}
+[VALID] Data valid: {'device_id': 'room01', 'temperature_c': 28.86, 'humidity_pct': 53.38, 'co2_ppm': 868, 'power_watt': 107.95, 'timestamp': '2026-10-22T13:21:12'}
+[INFO] Ringkasan: 5 pesan, 3 valid, 2 tidak valid.
