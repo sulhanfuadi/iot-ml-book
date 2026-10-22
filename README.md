@@ -524,6 +524,10 @@ iot-ml-book/
   python scripts/mqtt/subscribe_sensor.py --topic "iotlab/room01/alert"
   ```
 - **Aturan alert:** model memprediksi FAULT, atau suhu > 32 C dan CO2 > 1200 ppm bersamaan. Tambahkan `--influx --influx-token <token>` untuk storage InfluxDB sesuai buku.
+- **Versi sederhana berbasis skor anomali (Pendekatan B buku: skor >= 0.7 memicu alert):**
+  ```bash
+  python scripts/alert_score_demo.py
+  ```
 - **Notebook Interaktif:** `notebooks/32_pipeline_alert.ipynb`.
 
 ### Hands-on 32 (Bab 13): Monitoring Data Drift
