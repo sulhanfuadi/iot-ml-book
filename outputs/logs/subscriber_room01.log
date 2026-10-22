@@ -1,0 +1,21 @@
+2026-10-22T07:42:42.659996 - Subscribe ke topik: kampus/lab1/room01/telemetry
+2026-10-22T07:42:58.526906 - Subscribe ke topik: kampus/lab1/room01/telemetry
+2026-10-22T07:42:58.730192 - Pesan valid dari kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 24.05, "humidity_pct": 55.4, "co2_ppm": 663, "power_watt": 111.94, "timestamp": "2026-10-22T07:42:58"}
+2026-10-22T07:42:59.030579 - Pesan valid dari kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 26.14, "humidity_pct": 49.95, "co2_ppm": 500, "power_watt": 129.64, "timestamp": "2026-10-22T07:42:59"}
+2026-10-22T07:42:59.331385 - Pesan valid dari kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 27.35, "humidity_pct": 53.91, "co2_ppm": 782, "power_watt": 144.9, "timestamp": "2026-10-22T07:42:59"}
+2026-10-22T07:43:38.835317 - Subscribe ke topik: kampus/lab1/room01/telemetry
+2026-10-22T07:43:38.908231 - Pesan valid dari kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 27.01, "humidity_pct": 57.47, "co2_ppm": 717, "power_watt": 138.85, "timestamp": "2026-10-22T07:43:38"}
+2026-10-22T07:43:39.409917 - Pesan valid dari kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 24.72, "humidity_pct": 61.68, "co2_ppm": 543, "power_watt": 114.63, "timestamp": "2026-10-22T07:43:39"}
+2026-10-22T07:43:39.910266 - Pesan valid dari kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 26.22, "humidity_pct": 61.32, "co2_ppm": 514, "power_watt": 122.74, "timestamp": "2026-10-22T07:43:39"}
+2026-10-22T07:44:10.334168 - Subscribe ke topik: kampus/lab1/room01/telemetry
+2026-10-22T07:44:10.418588 - Pesan valid dari kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 25.36, "humidity_pct": 55.59, "co2_ppm": 492, "power_watt": 139.42, "timestamp": "2026-10-22T07:44:10"}
+2026-10-22T07:44:10.919666 - Pesan valid dari kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 27.74, "humidity_pct": 52.87, "co2_ppm": 529, "power_watt": 128.87, "timestamp": "2026-10-22T07:44:10"}
+2026-10-22T07:44:11.419875 - Pesan valid dari kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 25.75, "humidity_pct": 64.49, "co2_ppm": 870, "power_watt": 155.94, "timestamp": "2026-10-22T07:44:11"}
+2026-10-22T07:44:33.357403 - Subscribe ke topik: kampus/lab1/room01/telemetry
+2026-10-22T07:44:33.429876 - Pesan valid dari kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 25.48, "humidity_pct": 54.86, "co2_ppm": 845, "power_watt": 158.83, "timestamp": "2026-10-22T07:44:33"}
+2026-10-22T07:44:33.929356 - Pesan valid dari kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 26.91, "humidity_pct": 47.56, "co2_ppm": 739, "power_watt": 157.38, "timestamp": "2026-10-22T07:44:33"}
+2026-10-22T07:44:34.429541 - Pesan valid dari kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 27.21, "humidity_pct": 50.74, "co2_ppm": 719, "power_watt": 103.33, "timestamp": "2026-10-22T07:44:34"}
+2026-10-22T07:44:52.652247 - Subscribe ke topik: kampus/lab1/room01/telemetry
+2026-10-22T07:44:52.721620 - Pesan valid dari kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 27.03, "humidity_pct": 57.28, "co2_ppm": 785, "power_watt": 129.73, "timestamp": "2026-10-22T07:44:52"}
+2026-10-22T07:44:53.221803 - Pesan valid dari kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 29.71, "humidity_pct": 50.51, "co2_ppm": 849, "power_watt": 120.34, "timestamp": "2026-10-22T07:44:53"}
+2026-10-22T07:44:53.722145 - Pesan valid dari kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 24.09, "humidity_pct": 51.25, "co2_ppm": 520, "power_watt": 146.73, "timestamp": "2026-10-22T07:44:53"}
