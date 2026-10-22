@@ -524,3 +524,18 @@ iot-ml-book/
   ```
 - **Output:** `outputs/reports/iot_ml_operational_checklist.md`.
 - **Notebook Interaktif:** `notebooks/35_operational_checklist.ipynb`.
+
+### Hands-on 35: Studi Kasus A - Smart Room Monitoring
+- **Latih model kenyamanan (ke `outputs/models/case_a_room_rf.joblib`):**
+  ```bash
+  python scripts/case_a_train_room_model.py
+  ```
+- **Publisher simulator (butuh broker lokal):**
+  ```bash
+  python scripts/case_a_room_publisher.py --count 20 --interval 1
+  ```
+- **Subscriber + klasifikasi (storage CSV; `--influx` untuk InfluxDB sesuai buku):**
+  ```bash
+  python scripts/case_a_room_subscriber.py --max-messages 10 --timeout 60
+  ```
+- **Notebook Interaktif:** `notebooks/36_studi_kasus_a.ipynb`.
