@@ -475,3 +475,16 @@ iot-ml-book/
   python scripts/edge_room_classifier_mqtt.py --steps 20 --delay 0.05
   ```
 - **Notebook Interaktif:** `notebooks/30_mini_proyek_edge.ipynb`.
+
+### Hands-on 30 (Bab 12): Pipeline Lengkap MQTT -> Prediksi -> Storage -> Dashboard
+- **Simulator sensor (butuh broker lokal, misal `python scripts/mqtt/run_broker.py`):**
+  ```bash
+  python scripts/publisher_room_simulator.py --count 20 --interval 1
+  ```
+- **Subscriber pipeline (preprocessing + prediksi + storage CSV; tambahkan `--influx --influx-token <token>` untuk InfluxDB sesuai buku):**
+  ```bash
+  python scripts/pipeline_room_subscriber.py --max-messages 10 --timeout 60
+  ```
+- **Dashboard (opsional, sesuai buku):** jalankan InfluxDB 2 (`docker run -d -p 8086:8086 influxdb:2`, org `iotlab`, bucket `sensor_data`) dan Grafana (`docker run -d -p 3000:3000 grafana/grafana-oss`), tambahkan InfluxDB sebagai data source, lalu susun panel suhu/kelembaban/CO2/daya/status dengan ambang warna normal-hijau, warning-kuning, fault-merah.
+- **Output CSV:** `outputs/reports/pipeline_room_predictions.csv`.
+- **Notebook Interaktif:** `notebooks/31_pipeline_lengkap.ipynb`.
