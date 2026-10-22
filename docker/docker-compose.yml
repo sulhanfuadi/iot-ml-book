@@ -1,0 +1,42 @@
+# Stack opsional sesuai buku: Mosquitto + InfluxDB 2 + Grafana.
+# Jalankan dari folder ini:  INFLUX_TOKEN=GANTI_DENGAN_TOKEN_ANDA docker compose up -d
+# Org, bucket, dan username sama dengan buku: iotlab / sensor_data / admin.
+# Catatan: file ini belum diuji dengan Docker (tidak tersedia di lingkungan pengembangan).
+# Ketiga komponen (Mosquitto, InfluxDB 2.7, Grafana 11.3 + dashboard) sudah diuji
+# berjalan native; lihat README bagian "InfluxDB dan Grafana".
+services:
+  mosquitto:
+    image: eclipse-mosquitto:2
+    ports:
+      - "1883:1883"
+    volumes:
+      - ./mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
+  influxdb:
+    image: influxdb:2
+    ports:
+      - "8086:8086"
+    environment:
+      DOCKER_INFLUXDB_INIT_MODE: setup
+      DOCKER_INFLUXDB_INIT_USERNAME: admin
+      DOCKER_INFLUXDB_INIT_PASSWORD: iotlabpass123
+      DOCKER_INFLUXDB_INIT_ORG: iotlab
+      DOCKER_INFLUXDB_INIT_BUCKET: sensor_data
+      DOCKER_INFLUXDB_INIT_ADMIN_TOKEN: ${INFLUX_TOKEN:-GANTI_DENGAN_TOKEN_ANDA}
+    volumes:
+      - influxdb-data:/var/lib/influxdb2
+  grafana:
+    image: grafana/grafana-oss
+    ports:
+      - "3000:3000"
+    depends_on:
+      - influxdb
+    environment:
+      INFLUX_URL: http://influxdb:8086
+      INFLUX_TOKEN: ${INFLUX_TOKEN:-GANTI_DENGAN_TOKEN_ANDA}
+    volumes:
+      - ./grafana/provisioning:/etc/grafana/provisioning
+      - ../dashboards:/var/lib/grafana/dashboards
+      - grafana-data:/var/lib/grafana
+volumes:
+  influxdb-data:
+  grafana-data:

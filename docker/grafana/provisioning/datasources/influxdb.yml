@@ -1,0 +1,14 @@
+apiVersion: 1
+datasources:
+  - name: InfluxDB-iotlab
+    uid: influxdb-iotlab
+    type: influxdb
+    access: proxy
+    url: ${INFLUX_URL}
+    jsonData:
+      version: Flux
+      organization: iotlab
+      defaultBucket: sensor_data
+      tlsSkipVerify: true
+    secureJsonData:
+      token: ${INFLUX_TOKEN}
