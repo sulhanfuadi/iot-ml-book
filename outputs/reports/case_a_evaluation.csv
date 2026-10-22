@@ -1,0 +1,3 @@
+model,accuracy,f1_nyaman,f1_tidak_nyaman
+logistic_regression,0.9074074074074074,,
+random_forest,0.9976851851851852,0.9922480620155039,0.998639455782313
