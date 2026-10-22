@@ -248,3 +248,14 @@ iot-ml-book/
   python scripts/mqtt/publish_multi_topic.py --limit 400 --interval 0.01
   ```
 - **Notebook Interaktif:** `notebooks/12_publish_csv_mqtt.ipynb`.
+
+### Hands-on 14: Fitur Time-Series dari Data Suhu/Kelembaban
+- **Bangun fitur (lag, diff, rolling, comfort index) ke `data/processed/room_30days_features.csv`:**
+  ```bash
+  python scripts/feature_room_timeseries.py
+  ```
+- **Visualisasi fitur (`outputs/figures/features_*.png`):**
+  ```bash
+  python scripts/plot_room_features.py
+  ```
+- **Notebook Interaktif:** `notebooks/13_feature_timeseries.ipynb`.
