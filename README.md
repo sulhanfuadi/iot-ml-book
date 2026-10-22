@@ -508,3 +508,11 @@ iot-ml-book/
   ```
 - **Output:** `outputs/reports/data_distribution_monitor.csv`, `outputs/figures/dist_compare_temperature_c.png`, `outputs/figures/dist_compare_humidity_pct.png`.
 - **Notebook Interaktif:** `notebooks/33_data_drift.ipynb`.
+
+### Hands-on 33 (Bab 13): Feature Importance
+- **Ekstrak feature importance Random Forest + narasi:**
+  ```bash
+  python scripts/feature_importance_room_model.py
+  ```
+- **Output:** `outputs/reports/feature_importance_room_model.csv`, `outputs/figures/feature_importance_room_model.png`.
+- **Notebook Interaktif:** `notebooks/34_feature_importance.ipynb`.
