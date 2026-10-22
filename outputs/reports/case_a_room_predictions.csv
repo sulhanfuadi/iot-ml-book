@@ -1,0 +1,9 @@
+timestamp,device_id,temperature_c,humidity_pct,co2_ppm,predicted_status
+2026-10-22T08:11:42,room01,27.0,49.95,1487,nyaman
+2026-10-22T08:11:42,room01,23.26,66.67,477,tidak_nyaman
+2026-10-22T08:11:43,room01,25.38,44.52,580,nyaman
+2026-10-22T08:11:43,room01,25.27,49.59,1040,nyaman
+2026-10-22T08:11:43,room01,28.62,54.47,985,tidak_nyaman
+2026-10-22T08:11:44,room01,23.7,44.26,1283,nyaman
+2026-10-22T08:11:44,room01,29.77,44.37,720,tidak_nyaman
+2026-10-22T08:11:44,room01,26.15,44.93,509,nyaman
