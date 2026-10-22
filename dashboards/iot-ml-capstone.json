@@ -1,0 +1,252 @@
+{
+  "uid": "iot-ml-capstone",
+  "title": "IoT-ML Capstone (Hands-on 38)",
+  "schemaVersion": 39,
+  "version": 1,
+  "time": {
+    "from": "now-24h",
+    "to": "now+1d"
+  },
+  "refresh": "10s",
+  "panels": [
+    {
+      "id": 1,
+      "title": "Temperature",
+      "type": "timeseries",
+      "datasource": {
+        "type": "influxdb",
+        "uid": "influxdb-iotlab"
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "celsius"
+        },
+        "overrides": []
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "influxdb-iotlab"
+          },
+          "refId": "A",
+          "query": "from(bucket: \"sensor_data\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r._measurement == \"capstone_device_monitoring\" and r._field == \"temperature_c\")"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Humidity",
+      "type": "timeseries",
+      "datasource": {
+        "type": "influxdb",
+        "uid": "influxdb-iotlab"
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 12,
+        "x": 12,
+        "y": 0
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "humidity"
+        },
+        "overrides": []
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "influxdb-iotlab"
+          },
+          "refId": "A",
+          "query": "from(bucket: \"sensor_data\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r._measurement == \"capstone_device_monitoring\" and r._field == \"humidity_pct\")"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Power",
+      "type": "timeseries",
+      "datasource": {
+        "type": "influxdb",
+        "uid": "influxdb-iotlab"
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 12,
+        "x": 0,
+        "y": 7
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "watt"
+        },
+        "overrides": []
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "influxdb-iotlab"
+          },
+          "refId": "A",
+          "query": "from(bucket: \"sensor_data\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r._measurement == \"capstone_device_monitoring\" and r._field == \"power_watt\")"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Current",
+      "type": "timeseries",
+      "datasource": {
+        "type": "influxdb",
+        "uid": "influxdb-iotlab"
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 12,
+        "x": 12,
+        "y": 7
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "amp"
+        },
+        "overrides": []
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "influxdb-iotlab"
+          },
+          "refId": "A",
+          "query": "from(bucket: \"sensor_data\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r._measurement == \"capstone_device_monitoring\" and r._field == \"current_amp\")"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "iforest_anomaly",
+      "type": "timeseries",
+      "datasource": {
+        "type": "influxdb",
+        "uid": "influxdb-iotlab"
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 12,
+        "x": 0,
+        "y": 14
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "short"
+        },
+        "overrides": []
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "influxdb-iotlab"
+          },
+          "refId": "A",
+          "query": "from(bucket: \"sensor_data\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r._measurement == \"capstone_device_monitoring\" and r._field == \"iforest_anomaly\")"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "threshold_alert",
+      "type": "timeseries",
+      "datasource": {
+        "type": "influxdb",
+        "uid": "influxdb-iotlab"
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 12,
+        "x": 12,
+        "y": 14
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "short"
+        },
+        "overrides": []
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "influxdb-iotlab"
+          },
+          "refId": "A",
+          "query": "from(bucket: \"sensor_data\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r._measurement == \"capstone_device_monitoring\" and r._field == \"threshold_alert\")"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Jumlah alert per jam",
+      "type": "timeseries",
+      "datasource": {
+        "type": "influxdb",
+        "uid": "influxdb-iotlab"
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 12,
+        "x": 0,
+        "y": 21
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "influxdb-iotlab"
+          },
+          "refId": "A",
+          "query": "from(bucket: \"sensor_data\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r._measurement == \"capstone_alerts\" or (r._measurement == \"capstone_device_monitoring\" and (r._field == \"iforest_anomaly\" or r._field == \"threshold_alert\")))\n  |> filter(fn: (r) => r._field == \"iforest_anomaly\" or r._field == \"threshold_alert\" or r._field == \"alert_flag\")\n  |> aggregateWindow(every: 1h, fn: sum, createEmpty: false)"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Status anomali real-time",
+      "type": "stat",
+      "datasource": {
+        "type": "influxdb",
+        "uid": "influxdb-iotlab"
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 12,
+        "x": 12,
+        "y": 21
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "influxdb-iotlab"
+          },
+          "refId": "A",
+          "query": "from(bucket: \"sensor_data\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r._measurement == \"capstone_device_monitoring\" and r._field == \"iforest_anomaly\")\n  |> last()"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "iot-ml"
+  ]
+}

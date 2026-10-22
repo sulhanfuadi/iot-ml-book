@@ -63,6 +63,19 @@ python scripts/book_figures.py --only rmsstd
 | 14 | `features` | `outputs/figures/room_temp_ma6.png` |
 | 15 | `rmsstd` | `outputs/figures/vibration_features_rms_std.png` |
 
+## Mosquitto, InfluxDB dan Grafana
+
+Nilai default sama dengan buku: org `iotlab`, bucket `sensor_data`, token `GANTI_DENGAN_TOKEN_ANDA`.
+
+Broker MQTT: `python scripts/mqtt/run_broker.py` memakai Mosquitto bila terpasang (PATH, Homebrew, atau apt), dan otomatis jatuh ke amqtt bila tidak ada. Set `IOT_BROKER=amqtt` untuk memaksa amqtt.
+Pasang Mosquitto: `sudo apt install mosquitto mosquitto-clients` (Ubuntu) atau `brew install mosquitto` (macOS).
+
+Jalur native (Ubuntu/macOS): pasang InfluxDB 2.x dan Grafana, buat org `iotlab` dan bucket `sensor_data`, lalu jalankan skrip dengan `--influx --influx-token TOKEN`. Di Grafana, tambahkan datasource InfluxDB (Flux) lalu impor `dashboards/iot-ml-capstone.json` (8 panel).
+
+Jalur Docker: `cd docker && docker compose up -d` (Mosquitto 1883, InfluxDB 8086, Grafana 3000, datasource dan dashboard diprovisi otomatis; ubah `INFLUX_TOKEN` di lingkungan bila perlu).
+
+Status uji: Mosquitto 2.0.20, InfluxDB 2.7.10 dan Grafana 11.3.0 diuji nyata secara native (penulisan data HO5, HO30/31 dan capstone, datasource sehat, 8 panel mengembalikan data). File `docker/docker-compose.yml` belum diuji karena tidak ada Docker di lingkungan pengembangan.
+
 ## Struktur Direktori
 
 ```text

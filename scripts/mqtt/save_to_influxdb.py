@@ -23,9 +23,9 @@ BROKER_PORT = 1883
 TOPIC = "kampus/lab1/room01/telemetry"
 
 INFLUX_URL = "http://localhost:8086"
-INFLUX_TOKEN = "ganti-dengan-token-anda"
-INFLUX_ORG = "kampus"
-INFLUX_BUCKET = "iot_data"
+INFLUX_TOKEN = "GANTI_DENGAN_TOKEN_ANDA"
+INFLUX_ORG = "iotlab"
+INFLUX_BUCKET = "sensor_data"
 
 
 def create_mqtt_client(client_id):
