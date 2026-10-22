@@ -19,6 +19,31 @@ Seluruh implementasi hands-on, arsitektur kode, skrip simulator, serta model ana
 
 ---
 
+---
+
+## Setup di macOS (Apple Silicon / Intel)
+
+Seluruh hands-on berjalan lokal tanpa Docker dan tanpa Mosquitto; broker MQTT disediakan skrip Python (`scripts/mqtt/run_broker.py`, berbasis amqtt).
+
+```bash
+brew install python@3.11 git
+git clone https://github.com/sulhanfuadi/iot-ml-book.git && cd iot-ml-book
+python3.11 -m venv .venv && source .venv/bin/activate
+pip install --upgrade pip
+pip install -r requirements.txt
+python -m ipykernel install --user --name iot-ml-book
+jupyter lab
+```
+
+Catatan:
+- Gunakan Python 3.10-3.12. TensorFlow belum mendukung Python 3.13 ke atas.
+- TensorFlow >=2.16 memakai wheel native Apple Silicon; `tensorflow-metal` tidak diperlukan. Hanya Hands-on 26-29 yang memakai TensorFlow/TFLite.
+- Jalankan notebook dari folder mana pun; setiap notebook otomatis pindah ke root repo.
+- Pastikan port 1883 kosong. Jika memakai Mosquitto Homebrew (`brew install mosquitto && brew services start mosquitto`), jangan jalankan `run_broker.py` bersamaan.
+- InfluxDB/Grafana (opsional, flag `--influx`): `brew install influxdb grafana` atau Docker Desktop.
+- Notebook 00-02 memakai kernel bernama `iot-ml-book` (perintah `ipykernel install` di atas).
+- Jalankan satu notebook MQTT pada satu waktu; notebook memulai dan menghentikan broker sendiri.
+
 ## Struktur Direktori
 
 ```text
