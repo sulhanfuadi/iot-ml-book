@@ -539,3 +539,18 @@ iot-ml-book/
   python scripts/case_a_room_subscriber.py --max-messages 10 --timeout 60
   ```
 - **Notebook Interaktif:** `notebooks/36_studi_kasus_a.ipynb`.
+
+### Hands-on 36: Studi Kasus B - Predictive Maintenance
+- **Generate data motor (ke `data/synthetic/case_b_motor.csv`):**
+  ```bash
+  python scripts/case_b_generate_motor_data.py
+  ```
+- **Ekstraksi fitur per jendela (ke `data/processed/case_b_motor_features.csv`):**
+  ```bash
+  python scripts/case_b_feature_window.py
+  ```
+- **Isolation Forest + klasifikasi fault:**
+  ```bash
+  python scripts/case_b_detect_and_classify.py
+  ```
+- **Notebook Interaktif:** `notebooks/37_studi_kasus_b.ipynb`.
