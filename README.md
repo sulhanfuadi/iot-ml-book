@@ -442,3 +442,14 @@ iot-ml-book/
   python scripts/plot_room_forecast_model_comparison.py
   ```
 - **Notebook Interaktif:** `notebooks/27_benchmark_forecasting.ipynb`.
+
+### Hands-on 27 (Bab 11): Ekspor Model ke Format Ringan
+- **Jalur A - scikit-learn ke joblib (`outputs/models/room_status_rf.joblib`):**
+  ```bash
+  python scripts/export_sklearn_model.py
+  ```
+- **Jalur B - Keras ke TFLite (`outputs/models/room_binary.keras` + `.tflite`; membutuhkan `pip install tensorflow-cpu`):**
+  ```bash
+  python scripts/export_keras_to_tflite.py
+  ```
+- **Notebook Interaktif:** `notebooks/28_export_model.ipynb`.
