@@ -1,12 +1,12 @@
 Terhubung ke broker MQTT.
-Berhasil publish ke kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 25.6, "humidity_pct": 54.75, "co2_ppm": 531, "power_watt": 148.04, "timestamp": "2026-10-22T13:21:22"}
-Berhasil publish ke kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 28.76, "humidity_pct": 47.95, "co2_ppm": 787, "power_watt": 116.84, "timestamp": "2026-10-22T13:21:27"}
-Berhasil publish ke kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 25.35, "humidity_pct": 46.04, "co2_ppm": 792, "power_watt": 105.07, "timestamp": "2026-10-22T13:21:32"}
-Berhasil publish ke kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 26.34, "humidity_pct": 49.47, "co2_ppm": 599, "power_watt": 144.64, "timestamp": "2026-10-22T13:21:37"}
-Berhasil publish ke kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 26.86, "humidity_pct": 45.63, "co2_ppm": 623, "power_watt": 120.64, "timestamp": "2026-10-22T13:21:42"}
-Berhasil publish ke kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 26.23, "humidity_pct": 54.89, "co2_ppm": 615, "power_watt": 133.77, "timestamp": "2026-10-22T13:21:47"}
-Berhasil publish ke kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 26.81, "humidity_pct": 56.79, "co2_ppm": 837, "power_watt": 141.14, "timestamp": "2026-10-22T13:21:52"}
-Berhasil publish ke kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 27.72, "humidity_pct": 45.12, "co2_ppm": 888, "power_watt": 141.66, "timestamp": "2026-10-22T13:21:57"}
-Berhasil publish ke kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 24.23, "humidity_pct": 49.53, "co2_ppm": 535, "power_watt": 118.77, "timestamp": "2026-10-22T13:22:02"}
-Berhasil publish ke kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 25.98, "humidity_pct": 48.93, "co2_ppm": 532, "power_watt": 102.47, "timestamp": "2026-10-22T13:22:07"}
-Berhasil publish ke kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 26.93, "humidity_pct": 50.64, "co2_ppm": 733, "power_watt": 137.87, "timestamp": "2026-10-22T13:22:12"}
+Berhasil publish ke kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 24.02, "humidity_pct": 45.5, "co2_ppm": 639, "power_watt": 100.91, "timestamp": "2026-10-27T14:37:36"}
+Berhasil publish ke kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 26.81, "humidity_pct": 60.48, "co2_ppm": 523, "power_watt": 152.32, "timestamp": "2026-10-27T14:37:41"}
+Berhasil publish ke kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 28.06, "humidity_pct": 63.58, "co2_ppm": 692, "power_watt": 100.4, "timestamp": "2026-10-27T14:37:46"}
+Berhasil publish ke kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 29.68, "humidity_pct": 62.44, "co2_ppm": 565, "power_watt": 154.8, "timestamp": "2026-10-27T14:37:51"}
+Berhasil publish ke kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 24.15, "humidity_pct": 51.15, "co2_ppm": 531, "power_watt": 129.68, "timestamp": "2026-10-27T14:37:56"}
+Berhasil publish ke kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 26.91, "humidity_pct": 47.89, "co2_ppm": 578, "power_watt": 144.56, "timestamp": "2026-10-27T14:38:01"}
+Berhasil publish ke kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 28.6, "humidity_pct": 48.43, "co2_ppm": 519, "power_watt": 121.29, "timestamp": "2026-10-27T14:38:06"}
+Berhasil publish ke kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 24.37, "humidity_pct": 47.94, "co2_ppm": 801, "power_watt": 109.84, "timestamp": "2026-10-27T14:38:11"}
+Berhasil publish ke kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 28.13, "humidity_pct": 63.5, "co2_ppm": 775, "power_watt": 121.76, "timestamp": "2026-10-27T14:38:16"}
+Berhasil publish ke kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 27.01, "humidity_pct": 58.73, "co2_ppm": 830, "power_watt": 112.54, "timestamp": "2026-10-27T14:38:21"}
+Berhasil publish ke kampus/lab1/room01/telemetry: {"device_id": "room01", "temperature_c": 29.65, "humidity_pct": 60.28, "co2_ppm": 695, "power_watt": 133.43, "timestamp": "2026-10-27T14:38:26"}
