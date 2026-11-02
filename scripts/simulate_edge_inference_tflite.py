@@ -6,7 +6,7 @@ import tensorflow as tf
 MODEL_PATH = Path("models/room_binary.tflite")
 DATA_PATH = Path("data/processed/classification_room/test.csv")
 df = pd.read_csv(DATA_PATH)
-feature_cols = [col for col in df.columns if col not in ["timestamp", "device_id", "target_abnormal"]]
+feature_cols = [col for col in df.columns if col not in ["timestamp", "device_id", "target_abnormal", "status_label", "is_anomaly"]]
 interpreter = tf.lite.Interpreter(model_path=str(MODEL_PATH))
 interpreter.allocate_tensors()
 input_details = interpreter.get_input_details()
