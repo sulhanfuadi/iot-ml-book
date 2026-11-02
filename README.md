@@ -16,6 +16,18 @@ Seluruh implementasi hands-on, arsitektur kode, skrip simulator, serta model ana
 
 ---
 
+## Struktur Notebook (Pembaruan 2026-11-02)
+
+Seluruh 43 notebook dirapikan dan dilengkapi mengikuti buku:
+
+- **Tujuan dan contoh nyata** dari buku di bagian awal setiap notebook.
+- **Panduan Lengkap dari Buku**: penjelasan, format data, insight, dan pengamatan yang sebelumnya belum ada di notebook, diformat ulang agar rapi (kode dalam blok fence, daftar poin, dan langkah kerja sebagai daftar bernomor).
+- **Tantangan/Variasi dari buku** dikutip per notebook, dan dikerjakan pada sel terpisah berlabel "Solusi Tantangan (Tambahan di Luar Buku)": Hands-on 2, 3, 5, dan 13. Variasi regresi Hands-on 25 sudah ada di `scripts/compare_three_regressors.py`.
+- **Kode asli buku tidak diubah**; sel solusi adalah tambahan di luar buku.
+- Verifikasi: 43/43 notebook dieksekusi ulang dari awal hingga akhir tanpa error (2 November 2026), termasuk Hands-on 30-31 dengan InfluxDB lokal.
+
+---
+
 ## Setup di macOS (Apple Silicon / Intel)
 
 Seluruh hands-on berjalan lokal tanpa Docker dan tanpa Mosquitto; broker MQTT disediakan skrip Python (`scripts/mqtt/run_broker.py`, berbasis amqtt).
