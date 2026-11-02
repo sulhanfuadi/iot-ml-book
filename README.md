@@ -2,6 +2,8 @@
 
 Repositori praktikum Sistem Tertanam - Departemen Informatika Universitas Diponegoro (2026).
 
+**[Bahasa Indonesia]** | [English](README.en.md)
+
 ---
 
 ## Buku & Dokumen Referensi Utama
@@ -11,8 +13,6 @@ Seluruh implementasi hands-on, arsitektur kode, skrip simulator, serta model ana
 1. **Buku Utama:** [Onno W. Purbo, IoT Terintegrasi dengan Machine Learning Data Analytics, 2026 (PDF)](https://github.com/sulhanfuadi/iot-ml-book/blob/main/docs/Onno%20W.%20Purbo%2C%20IoT%20Terintegrasi%20dengan%20Machine%20Learning%20Data%20Analytics%2C%202026.pdf)
    - Penulis: Onno W. Purbo (ITTS / OnnoCenter, 2026)
    - Deskripsi: Sumber acuan utama (536 halaman) yang mencakup Hands-on 1 hingga Hands-on 40 (Fondasi Praktis IoT Analytics, Data Analytics Python, Machine Learning IoT, Integrasi End-to-End Open Source, dan Studi Kasus Praktis).
-
----
 
 ---
 
@@ -150,7 +150,8 @@ iot-ml-book/
 │   └── plot_dummy_sensor.py
 ├── requirements.lock.txt
 ├── requirements.txt
-└── README.md
+├── README.md
+└── README.en.md
 ```
 
 ---
