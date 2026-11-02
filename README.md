@@ -83,7 +83,7 @@ Jalur native (Ubuntu/macOS): pasang InfluxDB 2.x dan Grafana, buat org `iotlab` 
 
 Jalur Docker: `cd docker && docker compose up -d` (Mosquitto 1883, InfluxDB 8086, Grafana 3000, datasource dan dashboard diprovisi otomatis; ubah `INFLUX_TOKEN` di lingkungan bila perlu).
 
-Status uji: Mosquitto 2.0.20, InfluxDB 2.7.10 dan Grafana 11.3.0 diuji nyata secara native (penulisan data HO5, HO30/31 dan capstone, datasource sehat, 8 panel mengembalikan data). File `docker/docker-compose.yml` belum diuji karena tidak ada Docker di lingkungan pengembangan.
+Status uji: Mosquitto 2.0.20, InfluxDB 2.7.10 dan Grafana 11.3.0 diuji ulang secara native di Linux x86_64 pada 2 November 2026 dengan broker fallback amqtt dari repo: publisher uji beban mengirim 1000 payload MQTT dalam ~51 detik, tercatat 171 event alert dan 0 error pemrosesan; datasource sehat dan kedelapan panel Grafana mengembalikan data (sekitar 52 titik waktu per panel deret waktu; penulisan beresolusi 1 detik membuat sebagian payload saling menimpa sehingga jumlah tersimpan lebih kecil dari 1000). Pengujian native sebelumnya mencakup penulisan data HO5, HO30/31 dan capstone. File `docker/docker-compose.yml` belum diuji karena tidak ada Docker di lingkungan pengembangan; belum ada pengujian di perangkat ARM/Raspberry Pi. Catatan pengujian, hasil kueri panel, dan tangkapan layar dasbor: [docs/verification/grafana-2026-11-02.md](docs/verification/grafana-2026-11-02.md).
 
 ## Kebutuhan perangkat keras Raspberry Pi
 

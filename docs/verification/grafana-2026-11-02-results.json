@@ -1,0 +1,57 @@
+{
+  "grafana": {
+    "database": "ok",
+    "version": "11.3.0",
+    "commit": "d9455ff7db73b694db7d412e49a68bec767f2b5a"
+  },
+  "panels": {
+    "1": {
+      "status": 200,
+      "error": null,
+      "frames": 1,
+      "values": 52
+    },
+    "2": {
+      "status": 200,
+      "error": null,
+      "frames": 1,
+      "values": 52
+    },
+    "3": {
+      "status": 200,
+      "error": null,
+      "frames": 1,
+      "values": 52
+    },
+    "4": {
+      "status": 200,
+      "error": null,
+      "frames": 1,
+      "values": 52
+    },
+    "5": {
+      "status": 200,
+      "error": null,
+      "frames": 1,
+      "values": 52
+    },
+    "6": {
+      "status": 200,
+      "error": null,
+      "frames": 1,
+      "values": 52
+    },
+    "7": {
+      "status": 200,
+      "error": null,
+      "frames": 5,
+      "values": 5
+    },
+    "8": {
+      "status": 200,
+      "error": null,
+      "frames": 1,
+      "values": 1
+    }
+  }
+}

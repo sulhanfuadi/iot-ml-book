@@ -83,7 +83,7 @@ Native path (Ubuntu/macOS): install InfluxDB 2.x and Grafana, create org `iotlab
 
 Docker path: `cd docker && docker compose up -d` (Mosquitto 1883, InfluxDB 8086, Grafana 3000, datasource and dashboard provisioned automatically; change `INFLUX_TOKEN` in the environment if needed).
 
-Test status: Mosquitto 2.0.20, InfluxDB 2.7.10 and Grafana 11.3.0 were tested for real in a native setup (HO5, HO30/31 and capstone data writes, healthy datasource, 8 panels returning data). The `docker/docker-compose.yml` file has not been tested because Docker is not available in the development environment.
+Test status: Mosquitto 2.0.20, InfluxDB 2.7.10 and Grafana 11.3.0 were re-tested natively on x86_64 Linux on November 2, 2026 using the repo's amqtt fallback broker: the stress publisher sent 1000 MQTT payloads in ~51 seconds, with 171 alert events recorded and 0 processing errors; the datasource was healthy and all eight Grafana panels returned data (about 52 timestamps per time-series panel; 1-second write resolution makes some payloads overwrite each other, so fewer than 1000 points are stored). The earlier native test covered HO5, HO30/31 and capstone data writes. The `docker/docker-compose.yml` file has not been tested because Docker is not available in the development environment; no ARM/Raspberry Pi device testing has been done. Test notes, panel query results, and the dashboard screenshot: [docs/verification/grafana-2026-11-02.md](docs/verification/grafana-2026-11-02.md).
 
 ## Raspberry Pi hardware requirements
 
