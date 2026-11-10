@@ -9,4 +9,9 @@ df["anomaly_rule"] = (
     (df["co2_ppm"] > 1200) |
     (df["power_watt"] > 250)
 )
-print(df[["timestamp", "temperature_c", "co2_ppm", "power_watt", "anomaly_rule"]])
+# print(df[["timestamp", "temperature_c", "co2_ppm", "power_watt", "anomaly_rule"]])
+
+print("\n=== Deteksi anomali - Domain ===")
+flagged = df[df["anomaly_rule"]]
+print(flagged[["timestamp", "temperature_c", "co2_ppm", "power_watt", "anomaly_rule"]].to_string(index=False))
+print(f"\n[INFO] Titik anomali terdeteksi: {len(flagged)}")
