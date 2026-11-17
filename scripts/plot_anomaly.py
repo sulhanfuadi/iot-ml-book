@@ -14,6 +14,8 @@ df["anomaly_rule"] = (
 )
 plt.figure(figsize=(10, 5))
 plt.plot(df["timestamp"], df["temperature_c"], marker="o", label="Temperature")
+plt.plot(df["timestamp"], df["co2_ppm"], marker="s", label="CO2")
+plt.plot(df["timestamp"], df["power_watt"], marker="^", label="Power")
 plt.scatter(
     df.loc[df["anomaly_rule"], "timestamp"],
     df.loc[df["anomaly_rule"], "temperature_c"],
@@ -21,9 +23,21 @@ plt.scatter(
     s=100,
     label="Anomaly"
 )
-plt.title("Deteksi Anomali Suhu dengan Aturan Domain")
+plt.scatter(
+    df.loc[df["anomaly_rule"], "timestamp"],
+    df.loc[df["anomaly_rule"], "co2_ppm"],
+    marker="x",
+    s=100,
+)
+plt.scatter(
+    df.loc[df["anomaly_rule"], "timestamp"],
+    df.loc[df["anomaly_rule"], "power_watt"],
+    marker="x",
+    s=100,
+)
+plt.title("Deteksi Anomali dengan Aturan Domain")
 plt.xlabel("Waktu")
-plt.ylabel("Suhu (C)")
+plt.ylabel("Nilai Sensor")
 plt.xticks(rotation=45)
 plt.legend()
 plt.tight_layout()
