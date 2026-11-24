@@ -41,9 +41,9 @@ plt.scatter(
     c=df["cluster_kmeans"],
     s=10
 )
-plt.title("K-Means Clustering: Suhu vs kelembaban")
-plt.xlabel("Temperature (C)")
-plt.ylabel("Humidity (%)")
+plt.title("Hasil Clustering K-Means (K=3)")
+plt.xlabel("Suhu (°C)")
+plt.ylabel("Kelembapan (%)")
 plt.tight_layout()
 plt.savefig("outputs/figures/room_kmeans_scatter.png")
 plt.show()

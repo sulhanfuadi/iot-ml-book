@@ -27,9 +27,9 @@ plt.scatter(
     c=df["cluster_dbscan"],
     s=10
 )
-plt.title("DBSCAN: Suhu vs kelembaban")
-plt.xlabel("Temperature (C)")
-plt.ylabel("Humidity (%)")
+plt.title("Hasil Clustering DBSCAN")
+plt.xlabel("Suhu (°C)")
+plt.ylabel("Kelembapan (%)")
 plt.tight_layout()
 plt.savefig("outputs/figures/room_dbscan_scatter.png")
 plt.show()
