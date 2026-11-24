@@ -15,7 +15,7 @@ if "status_label" not in df.columns:
         elif row["temperature_c"] > 29 or row["co2_ppm"] > 900 or row["power_watt"] > 200:
             return "warning"
         return "normal"
-df["status_label"] = df.apply(make_label, axis=1)
+    df["status_label"] = df.apply(make_label, axis=1)
 # Fitur waktu
 df["hour"] = df["timestamp"].dt.hour
 df["day_of_week"] = df["timestamp"].dt.dayofweek
