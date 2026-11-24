@@ -27,17 +27,17 @@ print(df["iforest_anomaly"].value_counts())
 df.to_csv("outputs/reports/current_iforest_results.csv", index=False)
 # Visualisasi
 plt.figure(figsize=(12, 5))
-plt.plot(df["timestamp"], df["current_amp"], label="Current (A)")
+plt.plot(df["timestamp"], df["current_amp"], label="Arus")
 plt.scatter(
     df.loc[df["iforest_anomaly"] == 1, "timestamp"],
     df.loc[df["iforest_anomaly"] == 1, "current_amp"],
     marker="x",
     s=80,
-    label="Anomaly"
+    label="Anomali"
 )
-plt.title("Isolation Forest - Deteksi Anomali Arus Listrik")
+plt.title("Deteksi Anomali Arus dengan Isolation Forest")
 plt.xlabel("Waktu")
-plt.ylabel("Current (A)")
+plt.ylabel("Arus (A)")
 plt.xticks(rotation=45)
 plt.legend()
 plt.tight_layout()
